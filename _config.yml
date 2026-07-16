@@ -1,6 +1,7 @@
 
 include: ['_pages']
 
+baseurl: "/uoregon"
 home_url: "/"
 
 sass:

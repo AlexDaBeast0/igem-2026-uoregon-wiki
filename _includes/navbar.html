@@ -1,5 +1,5 @@
 <nav>
-  <a href="{{ site.home_url }}" id=nav-logo-link>
+  <a href="{{ site.home_url | relative_url }}" id=nav-logo-link>
     <img alt="UO iGEM logo: a duck in a knight's helmet" src="{{ site.data.asset_links.logo }}"/>
     <span>AquaFlock</span>
   </a>
@@ -7,7 +7,7 @@
   <ul id="nav-pages">
     {% for item in site.data.navigation %}
     <li>
-      <a href="{{ item.link }}">{{ item.name }}</a>
+      <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
     </li>
     {% endfor %}
   </ul>
