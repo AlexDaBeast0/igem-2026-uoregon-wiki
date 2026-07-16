@@ -1,0 +1,7 @@
+
+include: ['_pages']
+
+home_url: "/"
+
+sass:
+    sass_dir: _sass
