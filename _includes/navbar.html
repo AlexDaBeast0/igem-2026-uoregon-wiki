@@ -1,6 +1,6 @@
 <nav class="site-nav" aria-label="Main navigation">
 
-  <a href="{{ site.home_url }}" id="nav-logo-link">
+  <a href="{{ site.home_url | relative_url }}" id="nav-logo-link">
     <img alt="UO iGEM logo: a duck in a knight's helmet" src="{{ site.data.asset_links.logo }}"/>
     <span>AquaFlock</span>
   </a>
@@ -45,7 +45,6 @@
           </a>
         {% endif %}
       </li>
->>>>>>> dev
     {% endfor %}
   </ul>
 </nav>
