@@ -109,8 +109,7 @@ nav {
         box-shadow: 0 6px 12px rgb(0 0 0 / 15%);
     }
     
-    .nav-category-item:hover > .nav-dropdown,
-    .nav-category-item:focus-within > .nav-dropdown {
+    .nav-category-item:hover > .nav-dropdown {
         display: flex !important;
     }
 }

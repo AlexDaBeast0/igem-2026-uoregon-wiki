@@ -12,12 +12,10 @@ pages:
     children:
       - title: Wet lab
         children:
-          - title: Measurement
-            url: /measurement
-          - title: Alternative platform
-            url: /plant
-          - title: Safety and security
-            url: /safety-and-security
+          - title: Experiments
+            url: /experiments
+          - title: Lab Notebooks
+            url: /notebooks
 
       - title: Dry lab
         children:
@@ -29,7 +27,7 @@ pages:
       - title: Hardware
         url: /hardware
 
-  - title: Outside the lab
+  - title: Impact
     children:
       - title: Human Practices
         url: /human-practices
@@ -37,10 +35,6 @@ pages:
         url: /education
       - title: Entrepreneurship
         url: /entrepreneurship
-      - title: Inclusivity
-        url: /inclusivity
-      - title: Sustainability
-        url: /sustainability
 
   - title: Team
     children:
@@ -48,13 +42,3 @@ pages:
         url: /members
       - title: Gallery
         url: /gallery
-
-
-#- name: Engineering
-#  link: /engineering.html
-#- name: Human Practices
-#  link: /human-practices.html
-#- name: Contributions
-#  link: /contribution.html
-#- name: Team
-#  link: /attributions.html
