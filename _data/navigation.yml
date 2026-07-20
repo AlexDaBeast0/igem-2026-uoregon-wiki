@@ -1,8 +1,44 @@
-- name: Engineering
-  link: /engineering.html
-- name: Human Practices
-  link: /human-practices.html
-- name: Contributions
-  link: /contribution.html
-- name: Team
-  link: /attributions.html
+pages:
+  - title: Project
+    children:
+      - title: Description
+        url: /description
+      - title: Engineering
+        url: /engineering
+      - title: Contribution
+        url: /contribution
+
+  - title: Research
+    children:
+      - title: Wet lab
+        children:
+          - title: Experiments
+            url: /experiments
+          - title: Lab Notebooks
+            url: /notebooks
+
+      - title: Dry lab
+        children:
+          - title: Model
+            url: /model
+          - title: Software
+            url: /software
+
+      - title: Hardware
+        url: /hardware
+
+  - title: Impact
+    children:
+      - title: Human Practices
+        url: /human-practices
+      - title: Education
+        url: /education
+      - title: Entrepreneurship
+        url: /entrepreneurship
+
+  - title: Team
+    children:
+      - title: Members
+        url: /members
+      - title: Gallery
+        url: /gallery

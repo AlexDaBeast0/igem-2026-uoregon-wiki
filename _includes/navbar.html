@@ -1,14 +1,51 @@
-<nav>
-  <a href="{{ site.home_url | relative_url }}" id=nav-logo-link>
+<nav class="site-nav" aria-label="Main navigation">
+
+  <a href="{{ site.home_url }}" id="nav-logo-link">
     <img alt="UO iGEM logo: a duck in a knight's helmet" src="{{ site.data.asset_links.logo }}"/>
     <span>AquaFlock</span>
   </a>
-  
-  <ul id="nav-pages">
-    {% for item in site.data.navigation %}
-    <li>
-      <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
-    </li>
+
+  <ul id="nav-categories">
+    {% for category in site.data.navigation.pages %}
+      <li class="nav-category-item">
+        {% if category.children %}
+          <span class="nav-category-name">{{ category.title }}</span>
+          <div class="nav-dropdown">
+            <ul class="nav-subcategory-list">
+              {% for subcategory in category.children %}
+                <li class="nav-subcategory-item">
+                  {% if subcategory.children %}
+                    <details class="nav-subcategory">
+                      <summary>{{ subcategory.title }}</summary>
+
+                      <ul class="nav-pages">
+                        {% for page in subcategory.children %}
+                          <li>
+                            <a href="{{ page.url | relative_url }}">
+                              {{ page.title }}
+                            </a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </details>
+
+                  {% elsif subcategory.url %}
+                    <a href="{{ subcategory.url | relative_url }}">
+                      {{ subcategory.title }}
+                    </a>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+
+        {% elsif category.url %}
+          <a href="{{ category.url | relative_url }}">
+            {{ category.title }}
+          </a>
+        {% endif %}
+      </li>
+>>>>>>> dev
     {% endfor %}
   </ul>
 </nav>
