@@ -9,6 +9,7 @@ nav {
     font-size: 14pt;
     font-weight: bold;
     text-decoration: none;
+    background-color: #cddde5ff;
     
     overflow: visible;
     
@@ -17,7 +18,7 @@ nav {
         text-decoration: none;
     }
     a:hover {
-        text-shadow: 2px 2px lightgreen;
+        text-shadow: 2px 2px #5dadea;
     }
 
     #nav-logo-link {
