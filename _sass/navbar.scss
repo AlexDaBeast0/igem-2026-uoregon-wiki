@@ -1,17 +1,20 @@
 
+@use 'variables' as v;
+
 nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 10px 20px;
-    border-bottom: solid;
+    padding: 10px v.$sides-padding;
+    
+    //border-bottom: solid;
     
     font-size: 14pt;
     font-weight: bold;
     text-decoration: none;
-    background-color: #cddde5ff;
-    
-    overflow: visible;
+    background-color: var(--nav-bkgnd-color);
+
+    anchor-name: --nav-dropdown-anchor;
     
     a {
         color: black;
@@ -41,32 +44,35 @@ nav {
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        gap: 20px;
         list-style-type: none;
         margin: none;
     }
 
-    .nav-category-item {
-        position: relative;
+    .nav-dropdown {
+        position: absolute;
+        position-anchor: --nav-dropdown-anchor;
+        top: anchor(bottom);
+        
+        width: 100%;
+        left: 0;
+        padding: 10px v.$sides-padding;
+                
+        background-color: var(--nav-bkgnd-color);
+
+        display: none;
     }
 
-    .nav-dropdown {
-        display: none;
-        position: absolute;
-        
-        top: 100%;
-        left: 0;
-        z-index: 1000;
-
-        min-width: 220px;
-        padding: 10px;
-
-        background: white;
-        border: 1px solid black;
-        box-shadow: 0 6px 12px rgb(0 0 0 / 15%);
+    .nav-category-item {
+        padding-bottom: 100px;
+        margin-bottom: -100px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
-    .nav-category-item:hover > .nav-dropdown {
+    .nav-category-item:hover > .nav-dropdown,
+    .nav-category-item:focus-within > .nav-dropdown {
         display: flex !important;
     }
+
+
 }

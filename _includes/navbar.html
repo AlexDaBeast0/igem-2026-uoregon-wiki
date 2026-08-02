@@ -5,12 +5,14 @@
     <span>AquaFlock</span>
   </a>
 
+  <!-- original: -->
   <ul id="nav-categories">
     {% for category in site.data.navigation.pages %}
-      <li class="nav-category-item">
+      <li tabindex="0" class="nav-category-item">
         {% if category.children %}
           <span class="nav-category-name">{{ category.title }}</span>
           <div class="nav-dropdown">
+
             <ul class="nav-subcategory-list">
               {% for subcategory in category.children %}
                 <li class="nav-subcategory-item">
@@ -37,6 +39,7 @@
                 </li>
               {% endfor %}
             </ul>
+
           </div>
 
         {% elsif category.url %}
@@ -47,4 +50,5 @@
       </li>
     {% endfor %}
   </ul>
+  
 </nav>

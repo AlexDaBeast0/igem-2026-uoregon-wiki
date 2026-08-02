@@ -1,0 +1,16 @@
+
+// да, я использую переменные и из CSS и из SCSS.
+
+// SCSS:
+$font-stack: sans-serif;
+$sides-padding: 20%;
+
+
+// native CSS:
+:root {
+    --nav-bkgnd-color: lightblue;
+    --body-bkgnd-color: white;
+    --basement-bkgnd-color: darkblue;
+
+}
+    
