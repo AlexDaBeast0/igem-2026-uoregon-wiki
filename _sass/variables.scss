@@ -3,14 +3,20 @@
 
 // SCSS:
 $font-stack: sans-serif;
+$color-text: black;//#444;
+$color-highlight: #5dadea;
+$color-background: white;//#EEEEEE;
+
 $sides-padding: 20%;
 
 
 // native CSS:
 :root {
-    --nav-bkgnd-color: lightblue;
+    --nav-bkgnd-color: white;
     --body-bkgnd-color: white;
     --basement-bkgnd-color: darkblue;
+
+    --nav-shadow: lightgray 0 2px 2px;
 
 }
     

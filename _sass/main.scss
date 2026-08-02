@@ -3,18 +3,31 @@
 @use 'navbar';
 
 body {
+    // text config:
     font-family: v.$font-stack;
+    color: v.$color-text;
+    background-color: v.$color-background;
+    line-height: 1.6;
+    h1,h2,h3 {
+        line-height: 1.2;
+    }
+
+    
     margin: 0;
 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 
+    
+
 }
 
 main {
     padding: 10px v.$sides-padding;
     flex: 1;
+
+    
     
     .image {
         margin: 0;
@@ -27,7 +40,6 @@ main {
             color: darkgreen;
         }
     }
-
 }
 
 footer {
@@ -38,3 +50,19 @@ footer {
     background-color: #06406d;
 
 }
+
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+} 
+
+.vertical-line {
+    border-left: solid;
+}
+
+.rounded-border {
+    border: 1px solid;
+    border-radius: 3px;
+}
+

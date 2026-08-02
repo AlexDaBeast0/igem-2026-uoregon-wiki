@@ -5,36 +5,27 @@
     <span>AquaFlock</span>
   </a>
 
-  <!-- original: -->
   <ul id="nav-categories">
     {% for category in site.data.navigation.pages %}
-      <li tabindex="0" class="nav-category-item">
+      <li class="nav-category-item">
         {% if category.children %}
-          <span class="nav-category-name">{{ category.title }}</span>
+        <button class="nav-category-name">{{ category.title }}</button>
           <div class="nav-dropdown">
 
-            <ul class="nav-subcategory-list">
+            <ul class="nav-subcategory-list no-bullets">
               {% for subcategory in category.children %}
                 <li class="nav-subcategory-item">
                   {% if subcategory.children %}
-                    <details class="nav-subcategory">
+                    <details open class="nav-subcategory">
                       <summary>{{ subcategory.title }}</summary>
-
-                      <ul class="nav-pages">
+                      <ul class="nav-pages no-bullets">
                         {% for page in subcategory.children %}
-                          <li>
-                            <a href="{{ page.url | relative_url }}">
-                              {{ page.title }}
-                            </a>
-                          </li>
+                          <li>{% include page-button.html page=page %}</li>
                         {% endfor %}
                       </ul>
                     </details>
-
                   {% elsif subcategory.url %}
-                    <a href="{{ subcategory.url | relative_url }}">
-                      {{ subcategory.title }}
-                    </a>
+                    {% include page-button.html page=subcategory %}
                   {% endif %}
                 </li>
               {% endfor %}
@@ -43,9 +34,7 @@
           </div>
 
         {% elsif category.url %}
-          <a href="{{ category.url | relative_url }}">
-            {{ category.title }}
-          </a>
+          {% include page-button.html page=category %}
         {% endif %}
       </li>
     {% endfor %}

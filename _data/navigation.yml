@@ -3,42 +3,86 @@ pages:
     children:
       - title: Description
         url: /description
+        hint: Overview of our project
       - title: Engineering
         url: /engineering
+        hint: DBTL Cycles
       - title: Contribution
         url: /contribution
+        hint: To the iGEM community
 
   - title: Research
     children:
       - title: Wet lab
         children:
+          - title: Protocols
+            url: /protocols
+            hint: Protocols used in the lab
           - title: Experiments
             url: /experiments
-          - title: Lab Notebooks
-            url: /notebooks
+            hint: Lab notebooks
+          - title: Parts
+            url: /parts
+            hint: Gene parts that we worked on
 
       - title: Dry lab
         children:
-          - title: Model
+          - title: Metabolic Model
             url: /model
-          - title: Software
+            hint: Modeling nitrogen flux
+          - title: Split cyanophycin biosensor
             url: /software
+            hint: Detecting cyanophycin to trigger flocculation
+          - title: Wiki Search
+            url: /wiki-search
+            hint: Smart search engine for past iGEM projects
 
-      - title: Hardware
-        url: /hardware
-
-  - title: Impact
+      - title: Implementation
+        children:
+          - title: Wastestreams
+            url: /wastestreams
+            hint: Where to implement our bacteria
+          - title: Hardware
+            url: /hardware
+            hint: How to implement it
+            
+  - title: Engagement
     children:
-      - title: Human Practices
-        url: /human-practices
       - title: Education
-        url: /education
-      - title: Entrepreneurship
-        url: /entrepreneurship
+        children:
+          - title: Pedagogy and Philosophy
+            url: /education
+            hint: Pedagogical approaches
+          - title: Events
+            url: /edu-events
+            hint: Camp and other outreach
+          - title: How to wiki
+            url: /how-to-wiki
+            hint: Jekyll template
+      - title: Community Impact
+        children:
+          - title: Human practices
+            url: /human-practices
+            hint: How our project connects with the rest of the world
+          - title: Field Trips
+            url: /field-trips
+            hint: Wastewater treatment plant
+          - title: Sustainable Development Impact
+            url: /sustainability
+            hint: How our project alligns with SDGs
+          - title: Entrepreneurship
+            url: /entrepreneurship
+            hint: Oregon Innovation Challege
+
 
   - title: Team
     children:
       - title: Members
         url: /members
+        hint: Who is on the team
+      - title: Acknowledgements
+        url: /acknowledgements
+        hint: Who helped us
       - title: Gallery
         url: /gallery
+        hint: Photos

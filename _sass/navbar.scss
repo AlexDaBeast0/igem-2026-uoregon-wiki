@@ -7,7 +7,8 @@ nav {
     justify-content: space-between;
     padding: 10px v.$sides-padding;
     
-    //border-bottom: solid;
+    border-bottom: 1px solid;
+    //box-shadow: var(--nav-shadow);
     
     font-size: 14pt;
     font-weight: bold;
@@ -21,7 +22,7 @@ nav {
         text-decoration: none;
     }
     a:hover {
-        text-shadow: 2px 2px #5dadea;
+        text-shadow: 2px 2px v.$color-highlight;
     }
 
     #nav-logo-link {
@@ -45,34 +46,85 @@ nav {
         flex-flow: row wrap;
         align-items: center;
         list-style-type: none;
-        margin: none;
     }
+
+    .nav-category-name {
+        &::after {
+            margin-left: 10px;
+            content: "▾";
+            display: inline-block;
+            font-size: 0.8em;
+            transition: transform 0.05s ease;
+        }
+    }
+
+    // resetting button's built in stupid style
+    button { all: unset; }
+    button:focus-visible { outline: auto }
 
     .nav-dropdown {
         position: absolute;
         position-anchor: --nav-dropdown-anchor;
         top: anchor(bottom);
         
-        width: 100%;
-        left: 0;
-        padding: 10px v.$sides-padding;
+        //width: 100%;
+        left: v.$sides-padding;
+        right: v.$sides-padding;
+        padding: 10px;
                 
         background-color: var(--nav-bkgnd-color);
-
+        //box-shadow: var(--nav-shadow);
+        border: 1px solid;
+        border-top: 0;
+        
         display: none;
     }
 
     .nav-category-item {
+        // this is a bodge:
         padding-bottom: 100px;
         margin-bottom: -100px;
         padding-left: 10px;
         padding-right: 10px;
     }
     
-    .nav-category-item:hover > .nav-dropdown,
+    //.nav-category-item:hover > .nav-dropdown, // uncomment this line for dropdown-upon-hover
     .nav-category-item:focus-within > .nav-dropdown {
         display: flex !important;
     }
+    //.nav-category-item:hover > .nav-category-name::after, // uncomment this line for dropdown-upon-hover
+    .nav-category-item:focus-within > .nav-category-name::after {
+        transform: rotate(180deg);
+    }
 
+    .nav-subcategory-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        
+        width: 100%;
+    }
+
+    .nav-subcategory-item {
+        flex-grow: 1;
+        //width: 100%;
+    }
+    
+    .nav-subcategory {
+        margin: 5px;
+        padding: 5px 10px;
+
+        height: 90%;
+    }
+    
+    .page-button {
+        margin: 5px;
+        padding: 5px 10px;
+        
+        .page-hint {
+            font-weight: normal;
+        }
+
+    }
 
 }
