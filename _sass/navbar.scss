@@ -6,6 +6,9 @@ nav {
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 10px v.$sides-padding;
+
+    position: sticky;
+    top: 0;
     
     border-bottom: 1px solid;
     //box-shadow: var(--nav-shadow);
@@ -14,8 +17,6 @@ nav {
     font-weight: bold;
     text-decoration: none;
     background-color: var(--nav-bkgnd-color);
-
-    anchor-name: --nav-dropdown-anchor;
     
     a {
         color: black;
@@ -64,10 +65,8 @@ nav {
 
     .nav-dropdown {
         position: absolute;
-        position-anchor: --nav-dropdown-anchor;
-        top: anchor(bottom);
+        top: 100%;
         
-        //width: 100%;
         left: v.$sides-padding;
         right: v.$sides-padding;
         padding: 10px;
@@ -81,7 +80,7 @@ nav {
     }
 
     .nav-category-item {
-        // this is a bodge:
+        // this is a bodge for dropdown-upon-hover to not dissappear:
         padding-bottom: 100px;
         margin-bottom: -100px;
         padding-left: 10px;
