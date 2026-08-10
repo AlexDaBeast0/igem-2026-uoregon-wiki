@@ -36,7 +36,7 @@ def make_page(title, url, pages_dir=PAGES_DIR):
 
         page_template = (
             f"---\n"
-            f"layout: default\n"
+            f"layout: page\n"
             f"permalink: {url}\n"
             f"---\n"
             f"\n# {title}\n"
