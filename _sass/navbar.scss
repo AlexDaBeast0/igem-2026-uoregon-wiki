@@ -5,25 +5,25 @@ nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 10px v.$sides-padding;
+    padding: 10px 3%;
 
     position: sticky;
     top: 0;
     
     border-bottom: 1px solid;
-    //box-shadow: var(--nav-shadow);
     
-    font-size: 14pt;
     font-weight: bold;
     text-decoration: none;
-    background-color: var(--nav-bkgnd-color);
+    background-color: var(--color-primary-accent);
     
     a {
-        color: black;
+        color: var(--color-primary-text);
         text-decoration: none;
     }
     a:hover {
-        text-shadow: 2px 2px v.$color-highlight;
+        > .page-button {
+            background: var(--color-secondary-background);
+        }
     }
 
     #nav-logo-link {
@@ -37,7 +37,7 @@ nav {
         }
         & span {
             margin-left: 10px;
-            font-size: 20pt;
+            font-size: 16pt;
         }
     }
 
@@ -54,7 +54,7 @@ nav {
             margin-left: 10px;
             content: "▾";
             display: inline-block;
-            font-size: 0.8em;
+            //font-size: 0.8em;
             transition: transform 0.05s ease;
         }
     }
@@ -67,12 +67,11 @@ nav {
         position: absolute;
         top: 100%;
         
-        left: v.$sides-padding;
-        right: v.$sides-padding;
+        left: var(--sides-padding);
+        right: var(--sides-padding);
         padding: 10px;
                 
-        background-color: var(--nav-bkgnd-color);
-        //box-shadow: var(--nav-shadow);
+        background-color: var(--color-primary-accent);
         border: 1px solid;
         border-top: 0;
         
@@ -80,7 +79,7 @@ nav {
     }
 
     .nav-category-item {
-        // this is a bodge for dropdown-upon-hover to not dissappear:
+        // this is a bodge for dropdown-upon-hover to not disappear:
         padding-bottom: 100px;
         margin-bottom: -100px;
         padding-left: 10px;
@@ -103,10 +102,13 @@ nav {
         
         width: 100%;
     }
+    .nav-subcategory-has-children {
+        // я честно хз зачем я нагородил этот огород, но на всякий случай оставлю.
+        // этот класс появл. у nav-subcategory-list если у подкатегории есть дети
+    }
 
     .nav-subcategory-item {
-        flex-grow: 1;
-        //width: 100%;
+        flex: 1;        
     }
     
     .nav-subcategory {
@@ -115,6 +117,7 @@ nav {
 
         height: 90%;
     }
+    
     
     .page-button {
         margin: 5px;
@@ -126,4 +129,12 @@ nav {
 
     }
 
+    // TODO
+    #mobile-hamburger {
+        display: none;
+    }
+    
+    @media (max-device-width: v.$mobile-breakpoint) {
+        
+    }
 }

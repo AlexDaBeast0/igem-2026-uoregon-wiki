@@ -7,16 +7,56 @@ $color-text: black;//#444;
 $color-highlight: #5dadea;
 $color-background: white;//#EEEEEE;
 
-$sides-padding: 20%;
+$mobile-breakpoint: 480px;
+
+$color-primary-text-l: black;
+$color-secondary-text-l: #676e71;
+$color-primary-background-l: white;
+$color-secondary-background-l: #dddddd;
+$color-primary-accent-l: #8ea28b;
+$color-secondary-accent-l: #885855;
+
+$color-primary-text-d: white;
+$color-secondary-text-d: #dddddd;
+$color-primary-background-d: black;
+$color-secondary-background-d: #2b2b2b;
+$color-primary-accent-d: #8ea28b;
+$color-secondary-accent-d: #885855;
 
 
 // native CSS:
 :root {
-    --nav-bkgnd-color: white;
-    --body-bkgnd-color: white;
-    --basement-bkgnd-color: darkblue;
+    --color-primary-text: #{$color-primary-text-l};
+    --color-secondary-text: #{$color-secondary-text-l};
+    --color-primary-background: #{$color-primary-background-l};
+    --color-secondary-background: #{$color-secondary-background-l};
+    --color-primary-accent: #{$color-primary-accent-l};
+    --color-secondary-accent: #{$color-secondary-accent-l};
+    @media (prefers-color-scheme: dark) {
+        --color-primary-text: #{$color-primary-text-d};
+        --color-secondary-text: #{$color-secondary-text-d};
+        --color-primary-background: #{$color-primary-background-d};
+        --color-secondary-background: #{$color-secondary-background-d};
+        --color-primary-accent: #{$color-primary-accent-d};
+        --color-secondary-accent: #{$color-secondary-accent-d};
+    }
 
-    --nav-shadow: lightgray 0 2px 2px;
+    
+    
 
+    --sides-padding: 20%;
+    --font-size: 13pt;
+    --font-size-small: 10pt;
+    --line-spacing: 1.5;
+    
+    @media (max-device-width: $mobile-breakpoint) {
+        --sides-padding: 10%;
+        --font-size: 32pt;
+        --font-size-small: 24pt;
+        --line-spacing: 1.6;
+    }
+
+    
 }
+
     

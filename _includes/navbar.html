@@ -9,10 +9,10 @@
     {% for category in site.data.navigation.pages %}
       <li class="nav-category-item">
         {% if category.children %}
+
         <button class="nav-category-name">{{ category.title }}</button>
           <div class="nav-dropdown">
-
-            <ul class="nav-subcategory-list no-bullets">
+            <ul class="nav-subcategory-list no-bullets {% if category.children[0].children %}nav-subcategory-has-children{% endif %}">
               {% for subcategory in category.children %}
                 <li class="nav-subcategory-item">
                   {% if subcategory.children %}
@@ -39,5 +39,8 @@
       </li>
     {% endfor %}
   </ul>
-  
+
+  <div id="mobile-hamburger">
+    <button>Menu</button>
+  </div>
 </nav>
