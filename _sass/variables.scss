@@ -9,19 +9,35 @@ $color-background: white;//#EEEEEE;
 
 $mobile-breakpoint: 480px;
 
-$color-primary-text-l: black;
-$color-secondary-text-l: #676e71;
-$color-primary-background-l: white;
-$color-secondary-background-l: #dddddd;
-$color-primary-accent-l: #8ea28b;
-$color-secondary-accent-l: #885855;
 
-$color-primary-text-d: white;
-$color-secondary-text-d: #dddddd;
-$color-primary-background-d: black;
-$color-secondary-background-d: #2b2b2b;
-$color-primary-accent-d: #8ea28b;
-$color-secondary-accent-d: #885855;
+// All colors: ///////////////////////////////////////////////////////
+//    Light theme: ///////////////////////////////////////////////////
+$color-primary-text-l: #303030;
+$color-secondary-text-l: #5a5a5a;
+$color-primary-background-l: #f1eadd;
+$color-secondary-background-l: #e4d8c3;
+// accent color:
+$color-accent-lighter-l: #678255;
+$color-accent-norm-l: #41654d;
+$color-accent-darker-l: #345557;
+// highlight color:
+$color-highlight-lighter-l: #678255;
+$color-highlight-norm-l: #6d002f;
+$color-highlight-darker-l: #57043f;
+
+//    Dark theme: ////////////////////////////////////////////////////
+$color-primary-text-d: #e0e0e0;
+$color-secondary-text-d: #e4d8c3;
+$color-primary-background-d: #2b2e3a;
+$color-secondary-background-d: #5a5a5a;
+// accent color:
+$color-accent-lighter-d: #678255;
+$color-accent-norm-d: #41654d;
+$color-accent-darker-d: #345557;
+// highlight color:
+$color-highlight-lighter-d: #678255;
+$color-highlight-norm-d: #6d002f;
+$color-highlight-darker-d: #57043f;
 
 
 // native CSS:
@@ -30,15 +46,28 @@ $color-secondary-accent-d: #885855;
     --color-secondary-text: #{$color-secondary-text-l};
     --color-primary-background: #{$color-primary-background-l};
     --color-secondary-background: #{$color-secondary-background-l};
-    --color-primary-accent: #{$color-primary-accent-l};
-    --color-secondary-accent: #{$color-secondary-accent-l};
+    // accent color:
+    --color-accent-lighter: #{$color-accent-lighter-l};
+    --color-accent-norm: #{$color-accent-norm-l};
+    --color-accent-darker: #{$color-accent-darker-l};
+    // highlight color:
+    --color-highlight-lighter: #{$color-highlight-lighter-l};
+    --color-highlight-norm: #{$color-highlight-norm-l};
+    --color-highlight-darker: #{$color-highlight-darker-l};
+    
     @media (prefers-color-scheme: dark) {
         --color-primary-text: #{$color-primary-text-d};
         --color-secondary-text: #{$color-secondary-text-d};
         --color-primary-background: #{$color-primary-background-d};
         --color-secondary-background: #{$color-secondary-background-d};
-        --color-primary-accent: #{$color-primary-accent-d};
-        --color-secondary-accent: #{$color-secondary-accent-d};
+        // accent color:
+        --color-accent-lighter: #{$color-accent-lighter-d};
+        --color-accent-norm: #{$color-accent-norm-d};
+        --color-accent-darker: #{$color-accent-darker-d};
+        // highlight color:
+        --color-highlight-lighter: #{$color-highlight-lighter-d};
+        --color-highlight-norm: #{$color-highlight-norm-d};
+        --color-highlight-darker: #{$color-highlight-darker-d};
     }
 
     
