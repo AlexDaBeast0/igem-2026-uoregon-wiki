@@ -14,7 +14,7 @@ nav {
     
     font-weight: bold;
     text-decoration: none;
-    background-color: var(--color-accent-lighter);
+    background-color: var(--color-accent-primary);
     
     a {
         color: var(--color-primary-text);
@@ -22,7 +22,7 @@ nav {
     }
     a:hover {
         > .page-button {
-            background: var(--color-accent-norm);
+            background: var(--color-accent-secondary);
         }
     }
 
@@ -72,7 +72,7 @@ nav {
         right: var(--sides-padding);
         padding: 10px;
                 
-        background-color: var(--color-accent-lighter);
+        background-color: var(--color-accent-primary);
         border: 1px solid;
         border-top: 0;
         
