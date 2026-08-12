@@ -50,6 +50,7 @@ nav {
     }
 
     .nav-category-name {
+        cursor: pointer;
         &::after {
             margin-left: 10px;
             content: "▾";
