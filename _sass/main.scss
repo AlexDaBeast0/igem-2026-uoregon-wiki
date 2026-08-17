@@ -36,6 +36,14 @@ main {
         figcaption {
             color: var(--color-secondary-text);
         }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .bibliography li {
+        list-style: none;
     }
 }
 

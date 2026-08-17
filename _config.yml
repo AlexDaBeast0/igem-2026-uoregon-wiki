@@ -6,3 +6,11 @@ home_url: "/"
 
 sass:
     sass_dir: _sass
+
+plugins:
+    - jekyll/scholar
+
+scholar:
+    style: american-chemical-society
+    locale: en
+    source: ./_bibliographies
