@@ -30,7 +30,6 @@
                 </li>
               {% endfor %}
             </ul>
-
           </div>
 
         {% elsif category.url %}
@@ -40,7 +39,42 @@
     {% endfor %}
   </ul>
 
-  <div id="mobile-hamburger">
-    <button>Menu</button>
-  </div>
+  <details id="mobile-nav">
+    <summary>Menu</summary>
+    
+    <ul id="mobile-nav-categories">
+      {% for category in site.data.navigation.pages %}
+        <li> <!-- class="mobile-nav-category-item"> -->
+          {% if category.children %}
+            <details open class="mobile-nav-category">
+              <summary>{{ category.title }}</summary>
+              <ul class="mobile-nav-subcategories">
+                {% for subcategory in category.children %}
+                  <li>
+                    {% if subcategory.children %}
+                      <details open class="mobile-nav-subcategory">
+                        <summary>{{ subcategory.title }}</summary>
+                        <ul class="mobile-nav-pages">
+                          {% for page in subcategory.children %}
+                            <li>{% include mobile-page-button.html page=page %}</li>
+                            {% endfor %}
+                        </ul>
+                      </details>
+                    {% elsif subcategory.url %}
+                      {% include mobile-page-button.html page=subcategory %}
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </details>
+          {% elsif category.url %}
+            {% include mobile-page-button.html page=category %}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </details>
+  
+
+
 </nav>
