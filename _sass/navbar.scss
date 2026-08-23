@@ -5,19 +5,19 @@ nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 10px 3%;
+    padding: 0 3%;
 
     position: sticky;
     top: 0;
     
-    border-bottom: 1px solid;
+    //border-bottom: 1px solid;
     
     font-weight: bold;
     text-decoration: none;
     background-color: var(--color-accent-primary);
     
     a {
-        color: var(--color-primary-text);
+        color: var(--color-primary-background);
         text-decoration: none;
     }
     a:hover {
@@ -36,7 +36,7 @@ nav {
             height: 3rem;
         }
         & span {
-            margin-left: 10px;
+            margin-left: 20px;
             font-size: 16pt;
         }
     }
@@ -50,6 +50,7 @@ nav {
     }
 
     .nav-category-name {
+        color : var(--color-primary-background);
         cursor: pointer;
         &::after {
             margin-left: 10px;
