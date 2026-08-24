@@ -15,6 +15,7 @@ nav {
     font-weight: bold;
     text-decoration: none;
     background-color: var(--color-accent-primary);
+    color: var(--color-primary-background);
     
     a {
         color: var(--color-primary-background);
@@ -50,7 +51,6 @@ nav {
     }
 
     .nav-category-name {
-        color : var(--color-primary-background);
         cursor: pointer;
         &::after {
             margin-left: 10px;
@@ -74,8 +74,6 @@ nav {
         padding: 10px;
                 
         background-color: var(--color-accent-primary);
-        border: 1px solid;
-        border-top: 0;
         
         display: none;
     }
@@ -133,6 +131,7 @@ nav {
 
     #mobile-nav {
         display: none;
+        align-content: center;
 
         > summary {
             list-style: none;
@@ -142,10 +141,63 @@ nav {
         }
 
         color: var(--color-primary-background);
+
+        #mobile-nav-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-flow: column;
+            
+            width: 6rem;
+            height: 6rem;
+
+            #btn-line-mid {
+                transform: translateY(2.5rem);
+            }
+            #btn-line-bot {
+                transform: translateY(5rem);
+            }
+
+            #btn-line-top, #btn-line-mid, #btn-line-bot {
+                position: absolute;
+                width: 6rem;
+                height: 0.9rem;
+                background-color: var(--color-primary-background);
+                border-radius: 10px;
+                padding: 0;
+                margin: 0;
+                transition: transform .5s ease;
+            }
+        }
+    }
+    #mobile-nav[open] {
+         #mobile-nav-btn #btn-line-top {
+             transform: translateY(2rem) rotate(45deg);
+             width: 6rem;
+        }
+         #mobile-nav-btn #btn-line-bot {
+             transform: translateY(2rem) rotate(-45deg);
+             width: 6rem;
+        }
+        #mobile-nav-btn #btn-line-mid {
+            background-color: inherit;
+        }
     }
     @media (max-device-width: v.$mobile-breakpoint) {
         #nav-categories {display: none;}
         #mobile-nav {display: inline;}
+
+        #nav-logo-link {
+            & img {
+                width: 10rem;
+                height: 10rem;
+            }
+            & span {
+                margin-left: 20px;
+                font-size: 32pt;
+            }
+        }
+        
     }
     #mobile-nav-categories {
         display: flex;
@@ -155,7 +207,7 @@ nav {
         left: 0;
         box-sizing: border-box;
         width: 100%;
-        max-height: calc(100dvh - 5rem);
+        max-height: calc(100dvh - 10rem);
         margin: 0;
         overflow: scroll;
         
@@ -163,18 +215,19 @@ nav {
         background-color: var(--color-accent-primary);
         padding-bottom: 30px;
 
+        font-size: 40pt;
+
         // tree-like nested list behavior:
         li {
             display: block;
             position: relative;
+            padding: 10px;
         }
         .mobile-page-button {
             &::before {
                 margin-left: 10px;
                 content: "•";
                 display: inline-block;
-                //font-size: 0.8em;
-                
             }
         }
     }
