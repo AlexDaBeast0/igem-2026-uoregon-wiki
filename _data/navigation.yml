@@ -18,12 +18,15 @@ pages:
           - title: Protocols
             url: /protocols
             hint: Protocols used in the lab
-          - title: Experiments
-            url: /experiments
-            hint: Lab notebooks
-          - title: Parts
-            url: /parts
-            hint: Gene parts that we worked on
+          - title: Uptake
+            url: /uptake
+            hint: Uptake module
+          - title: Nitrogen storage
+            url: /nitrogen-storage
+            hint: Nitrogen storage module
+          - title: Flocculation
+            url: /flocculation
+            hint: Flocculation module
 
       - title: Dry lab
         children:
@@ -31,10 +34,10 @@ pages:
             url: /model
             hint: Modeling nitrogen flux
           - title: Split cyanophycin biosensor
-            url: /software
+            url: /split-biosensor
             hint: Detecting cyanophycin to trigger flocculation
           - title: Wiki Search
-            url: /wiki-search
+            url: /software
             hint: Smart search engine for past iGEM projects
 
       - title: Implementation
@@ -45,7 +48,7 @@ pages:
           - title: Hardware
             url: /hardware
             hint: How to implement it
-            
+
   - title: Engagement
     children:
       - title: Education

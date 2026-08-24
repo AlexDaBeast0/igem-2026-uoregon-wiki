@@ -1,7 +1,9 @@
 ---
 layout: page
 permalink: field-trips
----
 
-# Field Trips
-This page was not created yet
+title: Field Trips
+subtitle: This is the wastestreams page.
+banner: https://static.igem.wiki/teams/6041/wiki/placeholders/petunias.avif
+---
+Photos

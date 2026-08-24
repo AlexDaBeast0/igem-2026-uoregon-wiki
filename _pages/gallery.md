@@ -1,6 +1,8 @@
 ---
 layout: page
 permalink: /gallery
----
 
-# Gallery page
+title: Gallery
+subtitle: This is the gallery page.
+banner: https://static.igem.wiki/teams/6041/wiki/placeholders/petunias.avif
+---

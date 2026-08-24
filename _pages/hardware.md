@@ -1,6 +1,8 @@
 ---
 layout: page
 permalink: /hardware
----
 
-# Hardware Page
+title: Hardware
+subtitle: This is the hardware page.
+banner: https://static.igem.wiki/teams/6041/wiki/placeholders/petunias.avif
+---
