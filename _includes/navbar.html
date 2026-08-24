@@ -1,5 +1,5 @@
 <nav class="site-nav" aria-label="Main navigation">
-
+  
   <a href="{{ site.home_url | relative_url }}" id="nav-logo-link">
     <img alt="UO iGEM logo: a duck in a knight's helmet" src="{{ site.data.asset_links.logo }}"/>
     <span>AquaFlock</span>
@@ -7,35 +7,35 @@
 
   <ul id="nav-categories">
     {% for category in site.data.navigation.pages %}
-      <li class="nav-category-item">
-        {% if category.children %}
+    <li class="nav-category-item">
+      {% if category.children %}
 
-        <button class="nav-category-name">{{ category.title }}</button>
-          <div class="nav-dropdown">
-            <ul class="nav-subcategory-list no-bullets {% if category.children[0].children %}nav-subcategory-has-children{% endif %}">
-              {% for subcategory in category.children %}
-                <li class="nav-subcategory-item">
-                  {% if subcategory.children %}
-                    <details open class="nav-subcategory">
-                      <summary>{{ subcategory.title }}</summary>
-                      <ul class="nav-pages no-bullets">
-                        {% for page in subcategory.children %}
-                          <li>{% include page-button.html page=page %}</li>
-                        {% endfor %}
-                      </ul>
-                    </details>
-                  {% elsif subcategory.url %}
-                    {% include page-button.html page=subcategory %}
-                  {% endif %}
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
+      <button class="nav-category-name">{{ category.title }}</button>
+      <div class="nav-dropdown">
+        <ul class="nav-subcategory-list no-bullets {% if category.children[0].children %}nav-subcategory-has-children{% endif %}">
+          {% for subcategory in category.children %}
+          <li class="nav-subcategory-item">
+            {% if subcategory.children %}
+            <details open class="nav-subcategory">
+              <summary>{{ subcategory.title }}</summary>
+              <ul class="nav-pages no-bullets">
+                {% for page in subcategory.children %}
+                <li>{% include page-button.html page=page %}</li>
+                {% endfor %}
+              </ul>
+            </details>
+            {% elsif subcategory.url %}
+            {% include page-button.html page=subcategory %}
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
 
-        {% elsif category.url %}
-          {% include page-button.html page=category %}
-        {% endif %}
-      </li>
+      {% elsif category.url %}
+      {% include page-button.html page=category %}
+      {% endif %}
+    </li>
     {% endfor %}
   </ul>
 
@@ -48,37 +48,44 @@
     
     <ul id="mobile-nav-categories">
       {% for category in site.data.navigation.pages %}
-        <li> <!-- class="mobile-nav-category-item"> -->
-          {% if category.children %}
-            <details class="mobile-nav-category">
-              <summary>{{ category.title }}</summary>
-              <ul class="mobile-nav-subcategories">
-                {% for subcategory in category.children %}
-                  <li>
-                    {% if subcategory.children %}
-                      <details open class="mobile-nav-subcategory">
-                        <summary>{{ subcategory.title }}</summary>
-                        <ul class="mobile-nav-pages">
-                          {% for page in subcategory.children %}
-                            <li>{% include mobile-page-button.html page=page %}</li>
-                            {% endfor %}
-                        </ul>
-                      </details>
-                    {% elsif subcategory.url %}
-                      {% include mobile-page-button.html page=subcategory %}
-                    {% endif %}
-                  </li>
-                {% endfor %}
-              </ul>
-            </details>
-          {% elsif category.url %}
-            {% include mobile-page-button.html page=category %}
-          {% endif %}
-        </li>
+      <li> <!-- class="mobile-nav-category-item"> -->
+        {% if category.children %}
+        <details class="mobile-nav-category">
+          <summary>{{ category.title }}</summary>
+          <ul class="mobile-nav-subcategories">
+            {% for subcategory in category.children %}
+            <li>
+              {% if subcategory.children %}
+              <details class="mobile-nav-subcategory">
+                <summary>{{ subcategory.title }}</summary>
+                <ul class="mobile-nav-pages">
+                  {% for page in subcategory.children %}
+                  <li>{% include mobile-page-button.html page=page %}</li>
+                  {% endfor %}
+                </ul>
+              </details>
+              {% elsif subcategory.url %}
+              {% include mobile-page-button.html page=subcategory %}
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </details>
+        {% elsif category.url %}
+        {% include mobile-page-button.html page=category %}
+        {% endif %}
+      </li>
       {% endfor %}
     </ul>
   </details>
   
-
+  <svg
+      class="nav-water"
+      viewBox="0 0 1000 120"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+  >
+    <path d="M 0,20 C 170,5 328.38775,44.030633 498.38775,24.030633 668.38775,4.0306328 830,40 1000,20 V 90 C 897.57546,66.181846 857.03815,103.98166 726.49374,86.939543 607.49432,71.404579 504.70825,74.621979 354.89722,96.775493 85.743652,70.173317 159.19387,88.224506 0,96.132608 Z" />
+  </svg>
 
 </nav>
