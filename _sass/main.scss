@@ -9,10 +9,6 @@ body {
     color: var(--color-primary-text);
     background-color: var(--color-primary-background);
     line-height: var(--line-spacing);
-    h1,h2,h3 {
-        line-height: 1.2;
-    }
-    
     margin: 0;
 
     display: flex;
@@ -24,12 +20,38 @@ body {
         aspect-ratio: 4;
         object-fit: cover;
     }
-
 }
 
 main {
     padding: 10px var(--sides-padding);
     flex: 1;
+
+    h1,h2,h3 {
+        line-height: 1.2;
+    }
+    h1 {
+        border-bottom: 0.05em solid var(--color-secondary-text);
+    }
+    a {
+        color: var(--color-highlight-primary);
+        text-decoration: underline;
+    }
+    a:visited {
+        color: var(--color-highlight-secondary);
+        text-decoration: underline;
+    }
+
+    .page-heading {
+        h1 {
+            border: none;
+            margin-bottom: 10px;
+        }
+        span {
+            color: var(--color-secondary-text);
+        }
+        padding-bottom: 10px;
+        border-bottom: 0.05em solid var(--color-secondary-text);
+    }
     
     .image {
         margin: 0;

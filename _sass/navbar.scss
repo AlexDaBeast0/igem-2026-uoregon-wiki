@@ -16,10 +16,10 @@ nav {
     font-weight: bold;
     text-decoration: none;
     background-color: var(--color-accent-primary);
-    color: var(--color-primary-background);
+    color: var(--color-navbar-text);
     
     a {
-        color: var(--color-primary-background);
+        color: var(--color-navbar-text);
         text-decoration: none;
     }
     a:hover {
