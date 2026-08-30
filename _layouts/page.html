@@ -9,13 +9,24 @@
     {% include navbar.html %}
  
     <img alt="page banner picture" src="{{ page.banner }}" class="banner-img"/>
-    
+
     <main>
-      <div class="page-heading">
-        <h1>{{ page.title }}</h1>
-        <span>{{ page.subtitle }}</span>
+      <div class="content-grid-container">
+        
+        <div class="grid-item-toc">
+          {% include toc.html html=content class="toc" %}
+        </div>
+
+        <div class="grid-item-page-heading page-heading">
+          <h1>{{ page.title }}</h1>
+          <span>{{ page.subtitle }}</span>
+        </div>
+        
+        <div class="grid-item-page-text">
+          {{ content }}
+        </div>
+        
       </div>
-      {{ content }}
     </main>
     {% include basement.html %}
   </body>

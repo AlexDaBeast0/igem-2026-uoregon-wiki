@@ -25,7 +25,20 @@ body {
 main {
     padding: 10px var(--sides-padding);
     flex: 1;
-
+    
+    .content-grid-container {
+        display: grid;
+        grid-template-columns: 15em minmax(0, 1fr);
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            ". header"
+            "toc page-text";
+    }
+    .grid-item-page-heading { grid-area: header; }
+    .grid-item-toc { grid-area: toc; }
+    .grid-item-page-text { grid-area: page-text; }
+    
+    
     h1,h2,h3 {
         line-height: 1.2;
     }
@@ -52,6 +65,7 @@ main {
         padding-bottom: 10px;
         border-bottom: 0.05em solid var(--color-secondary-text);
     }
+    
     
     .image {
         margin: 0;
