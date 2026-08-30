@@ -37,7 +37,15 @@ main {
     .grid-item-page-heading { grid-area: header; }
     .grid-item-toc { grid-area: toc; }
     .grid-item-page-text { grid-area: page-text; }
-    
+    @media (max-device-width: v.$mobile-breakpoint) {
+        .content-grid-container {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "header"
+                "toc"
+                "page-text";
+        }
+    }
     
     h1,h2,h3 {
         line-height: 1.2;
