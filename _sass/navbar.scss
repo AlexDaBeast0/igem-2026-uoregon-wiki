@@ -142,9 +142,9 @@ nav {
         > summary::-webkit-details-marker {
             display: none;
         }
-
-        color: var(--color-primary-background);
-
+        
+        color: var(--color-navbar-text);
+        
         #mobile-nav-btn {
             display: flex;
             justify-content: space-between;
