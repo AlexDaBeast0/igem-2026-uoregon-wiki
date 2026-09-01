@@ -1,9 +1,21 @@
 <footer>
-  <it>In development; draft version.</it>
+  <a href="{{ site.home_url | relative_url }}" id="footer-logo-link">
+    <img alt="UO iGEM logo: a duck in a knight's helmet" src="{{ site.data.asset_links.logo }}"/>
+    <span>AquaFlock</span>
+  </a>
 
-  <p>Univeristy of Oregon iGEM team, 2026.</p>
-
-  <p>Webmaster: Fedor Chayka</p>
-
-  <p><a href="https://gitlab.igem.org/2026/uoregon">Repository</a></p>
+  <ul id="footer-page-list" class="no-bullets">
+    <li><a href="{{ 'description' | relative_url }}">Description</a></li>
+    <li><a href="{{ 'engineering' | relative_url }}">Engineering</a></li>
+    <li><a href="{{ 'contribution' | relative_url }}">Contribution</a></li>
+    <li><a href="{{ 'members' | relative_url }}">Team Members</a></li>
+  </ul>
+  
+  <div id="footer-credits">
+    <p>University of Oregon iGEM team, 2026.</p>
+    <p>Team-authored content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a></p>
+    <p>All code to generate this wiki is contained in <a href="https://gitlab.igem.org/2026/uoregon">this repository.</a></p>
+    <p>This wiki does not have Super Cow Powers.</p>
+  </div>
+  
 </footer>
