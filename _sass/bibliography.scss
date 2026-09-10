@@ -1,0 +1,21 @@
+
+@use 'variables' as v;
+
+.bibliography {
+    padding: 0;
+}
+.bibliography li {
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+    :target {
+        animation: highlight-ref 3s backwards 2s;
+    }
+    @keyframes highlight-ref {
+        from {
+            color: var(--color-highlight-primary);
+            text-decoration: underline;
+        }
+    }
+}

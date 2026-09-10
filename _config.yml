@@ -11,6 +11,6 @@ plugins:
     - jekyll/scholar
 
 scholar:
-    style: american-chemical-society
+    style: ./assets/misc/american-chemical-society.csl
     locale: en
     source: ./_bibliographies

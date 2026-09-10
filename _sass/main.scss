@@ -1,6 +1,7 @@
 
 @use 'variables' as v;
 @use 'navbar';
+@use 'bibliography';
 
 body {
     // text config:
@@ -37,6 +38,10 @@ main {
     .grid-item-page-heading { grid-area: header; }
     .grid-item-toc { grid-area: toc; }
     .grid-item-page-text { grid-area: page-text; }
+    .toc-container {
+        position: sticky;
+        top: 10%;
+    }
     @media (max-device-width: v.$mobile-breakpoint) {
         .content-grid-container {
             grid-template-columns: 1fr;
@@ -47,6 +52,10 @@ main {
         }
         .grid-item-toc {
             border-bottom: 0.05em solid var(--color-secondary-text); 
+        }
+        .toc-container {
+            position: relative;
+            top: auto;
         }
     }
     .toc {
@@ -64,6 +73,7 @@ main {
     
     h1,h2,h3 {
         line-height: 1.2;
+        scroll-margin-top: 15vh; // so it doesn't get covered by navbar when linking to it. see https://dev.to/yuridevat/how-to-not-cut-off-the-top-of-your-section-when-using-anchor-tags-22ig
     }
     h1 {
         border-bottom: 0.05em solid var(--color-secondary-text);
@@ -99,10 +109,6 @@ main {
         img {
             width: 100%;
         }
-    }
-
-    .bibliography li {
-        list-style: none;
     }
 }
 
