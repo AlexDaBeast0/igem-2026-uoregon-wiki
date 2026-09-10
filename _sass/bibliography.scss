@@ -15,7 +15,7 @@
     @keyframes highlight-ref {
         from {
             color: var(--color-highlight-primary);
-            text-decoration: underline;
+            font-weight: bold;
         }
     }
 }

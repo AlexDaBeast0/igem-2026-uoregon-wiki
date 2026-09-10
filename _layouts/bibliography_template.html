@@ -1,0 +1,16 @@
+---
+---
+
+{% if entry.doi %}
+  {%- assign doi = entry.doi
+      | remove: "https://doi.org/"
+      | remove: "http://doi.org/"
+      | remove: "doi:" -%}
+
+  {%- capture doi_url -%}https://doi.org/{{ doi }}{%- endcapture -%}
+  {%- capture doi_link -%}<a href="{{ doi_url }}">{{ doi_url }}</a>{%- endcapture -%}
+
+  {{ reference | replace: doi_url, doi_link }}
+{% else %}
+  {{ reference }}
+{% endif %}

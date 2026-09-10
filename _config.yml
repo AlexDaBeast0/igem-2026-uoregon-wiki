@@ -14,3 +14,4 @@ scholar:
     style: ./assets/misc/american-chemical-society.csl
     locale: en
     source: ./_bibliographies
+    bibliography_template: bibliography_template
