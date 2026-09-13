@@ -16,8 +16,10 @@
         
         <div class="grid-item-toc">
           <div class="toc-container">
-            Contents:
-            {% include toc.html html=content class="toc" %}
+            <details open>
+              <summary>Contents:</summary>
+              {% include toc.html html=content class="toc" %}
+            </details>
           </div>
         </div>
 
@@ -27,7 +29,9 @@
         </div>
         
         <div class="grid-item-page-text">
-          {{ content }}
+          <div class="text-container">
+            {{ content }}
+          </div>
         </div>
         
       </div>

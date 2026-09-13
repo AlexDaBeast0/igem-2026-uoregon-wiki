@@ -52,7 +52,8 @@ You can use hashmarks (`#`) to create headings of different size (more hashmarks
 ```
 - You can make unordered lists.
   - including nesting!
-- by putting dashes at the beginning of the line, and indenting for nesting (with two spaces. do not you dare to use the tab character.)
+- by putting dashes at the beginning of the line, and indenting for nesting 
+(with two spaces. do not you dare to use the tab character.)
 - like this:
 ```
 
