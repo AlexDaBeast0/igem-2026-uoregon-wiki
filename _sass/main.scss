@@ -2,6 +2,8 @@
 @use 'variables' as v;
 @use 'navbar';
 @use 'bibliography';
+@use 'toc';
+@use 'footer';
 
 body {
     // text config:
@@ -24,14 +26,12 @@ body {
 }
 
 main {
-    //padding: 10px var(--sides-padding);
-    //padding: 0;
     display: flex;
     flex: 1;
     
     .content-grid-container {
         display: grid;
-        grid-template-columns: 1fr 3fr;//15em minmax(0, 1fr);
+        grid-template-columns: 1fr 2fr;//15em minmax(0, 1fr);
         grid-template-rows: auto 1fr;
         grid-template-areas:
             ". header"
@@ -44,34 +44,10 @@ main {
     }
     .grid-item-toc {
         grid-area: toc;
-        padding: 16px;
     }
     .grid-item-page-text {
         grid-area: page-text;
         padding: 16px;
-    }
-    .toc-container {
-        position: sticky;
-        top: 10%;
-
-        a, a:visited { color: var(--color-primary-text); }
-        summary {
-            padding-bottom: 5px;
-            margin-bottom: 5px;
-            border-bottom: 0.05em solid var(--color-secondary-text); 
-        }
-    }
-    .toc {
-        padding-left: 0;
-        margin: 0;
-
-        list-style-type: none;
-        ul {
-            list-style-type: none;
-        }
-        a {
-            text-decoration: none;
-        }
     }
     @media (max-device-width: v.$mobile-breakpoint) {
         .content-grid-container {
@@ -89,25 +65,9 @@ main {
             top: auto;
         }
     }
+    
     .text-container {
         max-width: 48rem;
-    }
-    
-    
-    h1,h2,h3 {
-        line-height: 1.2;
-        scroll-margin-top: 15vh; // so it doesn't get covered by navbar when linking to it. see https://dev.to/yuridevat/how-to-not-cut-off-the-top-of-your-section-when-using-anchor-tags-22ig
-    }
-    h1 {
-        border-bottom: 0.05em solid var(--color-secondary-text);
-    }
-    a {
-        color: var(--color-highlight-primary);
-        text-decoration: underline;
-    }
-    a:visited {
-        color: var(--color-highlight-secondary);
-        text-decoration: underline;
     }
 
     .page-heading {
@@ -133,61 +93,23 @@ main {
             width: 100%;
         }
     }
-}
-
-footer {
-    padding: 30px var(--sides-padding);
-
-    color: var(--color-primary-text);
-    background-color: var(--color-secondary-background);
-
-    a {
-        color: var(--color-primary-text);
-        text-decoration: none;
-    }
-    a:hover {
-        > .page-button {
-            background: var(--color-accent-primary);
-        }
-    }
-
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    gap: 10px;
     
-    #footer-logo-link {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        
-        & img {
-            width: 3rem;
-            height: 3rem;
-        }
-        & span {
-            margin-left: 20px;
-            font-size: 16pt;
-            font-weight: bold;
-        }
+    h1,h2,h3 {
+        line-height: 1.2;
+        scroll-margin-top: 15vh; // so it doesn't get covered by navbar when linking to it. see https://dev.to/yuridevat/how-to-not-cut-off-the-top-of-your-section-when-using-anchor-tags-22ig
     }
-
-    #footer-page-list {
-        display: flex;
-        flew-flow: row wrap;
-        gap: 20px;
+    h1 {
+        border-bottom: 0.05em solid var(--color-secondary-text);
     }
-
-    #footer-credits {
-        border-top: 0.05em solid var(--color-secondary-text);
-        width: 100%;
-        p { margin: 0; }
-        a { text-decoration: underline; }
+    a {
+        color: var(--color-highlight-primary);
+        text-decoration: underline;
+    }
+    a:visited {
+        color: var(--color-highlight-secondary);
+        text-decoration: underline;
     }
 }
-
-
-
 
 .small-font {
     font-size: var(--font-size-small);
