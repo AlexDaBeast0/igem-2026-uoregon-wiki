@@ -7,4 +7,4 @@ subtitle: This is the metabolic model page.
 banner: https://static.igem.wiki/teams/6041/wiki/placeholders/petunias.avif
 ---
 
-# Model Page
+This page has not been written.

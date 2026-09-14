@@ -13,6 +13,8 @@ banner: https://static.igem.wiki/teams/6041/wiki/placeholders/petunias.avif
 
 The wiki uses markdown (a simple markup language, same as the one used in Notion) for all pages. Please do not embed HTML code directly---I (Fedor) will ignore that and reject your edit. If you want more complex functionality, contact me directly. For consistency, I am trying to keep all pages in this mostly-plain-text style. 
 
+ANY FORMATTING NOT EXPLICITLY OUTLINED HERE WILL PROBABLY NOT WORK ON THE WIKI AND WILL BE REJECTED.
+
 Below, `this font` indicates the literal way you write something before formatting is applied.
 
 # Text formatting:
@@ -30,7 +32,7 @@ To [link](/uoregon/engineering) to another page on the wiki, use this: `[link te
 
 # Headings:
 
-You can use hashmarks (`#`) to create headings of different size (more hashmarks---smaller header). Please don't use more than three, it doesn't look nice.
+Use hashmarks (`#`) to create headings of different size (more hashmarks---smaller header). Please start with header 1 (one hashmark), don't skip headers (don't follow a h1 wit an h3), and don't use more than three (it doesn't look nice, and CSS is not configured for it). **Do not** use bold text as headers; use hashmarks.
 
 # Header 1
 ## Header 2
