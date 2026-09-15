@@ -89,7 +89,20 @@ main {
     }
     h1 {
         border-bottom: 0.05em solid var(--color-secondary-text);
+        padding-bottom: 2px; // typography microtweak
     }
 
 }
 
+.box {
+  	background-color: var(--color-callout); 
+  	border-radius: 8px;
+	padding: 16px 16px;
+    margin: 16px 0;
+    h3 {
+        border-bottom: solid black 1px;
+        padding-bottom: 2px; //typography tweak
+        margin: 0 0 8px 0;
+    }
+    
+}
