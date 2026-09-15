@@ -22,6 +22,8 @@ $color-accent-secondary-l: #66806F;
 // highlight color:
 $color-highlight-primary-l: #930040;
 $color-highlight-secondary-l: #a60047;
+// callout box color:
+$color-callout-l: #f3e7b3;
 
 
 //    Dark theme: ////////////////////////////////////////////////////
@@ -35,7 +37,8 @@ $color-accent-secondary-d: #51705a;
 // highlight color:
 $color-highlight-primary-d: #ff79b3;
 $color-highlight-secondary-d: #fb0a72;
-
+// callout box color: 
+$color-callout-d: #534956;
 
 
 
@@ -54,7 +57,7 @@ $color-highlight-secondary-d: #fb0a72;
 
     // element-specific colors:
     --color-navbar-text: #{$color-primary-background-l};
-    
+    --color-callout: #{$color-callout-l};
     @media (prefers-color-scheme: dark) {
         --color-primary-text: #{$color-primary-text-d};
         --color-secondary-text: #{$color-secondary-text-d};
@@ -67,6 +70,8 @@ $color-highlight-secondary-d: #fb0a72;
         --color-highlight-primary: #{$color-highlight-primary-d};
         --color-highlight-secondary: #{$color-highlight-secondary-d};
         
+        // box callout:
+        --color-callout: #{$color-callout-d};
     }
 
     

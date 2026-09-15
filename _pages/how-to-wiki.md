@@ -110,5 +110,14 @@ To add the bibliography, the include is below. Put it at the end of the page.
 {% raw %}{% bibliography --file PAGE_NAME_GOES_HERE --cited_in_order %}{% endraw %}
 ```
 
+# Boxes for text
 
+{% include box.html 
+  heading="A heading"
+  text="Some text for the box"
+%}
+
+{% include box.html 
+  text="Some text for the box without a header"
+%}
 
