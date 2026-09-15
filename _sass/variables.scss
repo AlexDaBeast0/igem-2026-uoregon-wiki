@@ -2,8 +2,13 @@
 // да, я использую переменные и из CSS и из SCSS.
 
 // SCSS:
-$font-stack: sans-serif;
 $mobile-breakpoint: 480px;
+// fonts:
+$font-url-reg: "/uoregon/assets/fonts/UbuntuSans-Medium.woff";
+$font-url-bold: "/uoregon/assets/fonts/UbuntuSans-ExtraBold.woff";
+$font-url-ital: "/uoregon/assets/fonts/UbuntuSans-MediumItalic.woff";
+$font-url-boldital: "/uoregon/assets/fonts/UbuntuSans-ExtraBoldItalic.woff";
+$font-fallback-stack: sans-serif;
 
 // All colors: ///////////////////////////////////////////////////////
 //    Light theme: ///////////////////////////////////////////////////

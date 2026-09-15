@@ -1,9 +1,34 @@
 
 @use 'variables' as v;
 
+@font-face {
+    font-family: "Ubuntu-medium";
+    src: url(v.$font-url-reg);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Ubuntu-medium";
+    src: url(v.$font-url-bold);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Ubuntu-medium";
+    src: url(v.$font-url-ital);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Ubuntu-medium";
+    src: url(v.$font-url-boldital);
+    font-weight: bold;
+    font-style: italic;
+}
+
 body {
     // text config:
-    font-family: v.$font-stack;
+    font-family: "Ubuntu-medium", v.$font-fallback-stack;
     font-size: var(--font-size);
     color: var(--color-primary-text);
     background-color: var(--color-primary-background);
