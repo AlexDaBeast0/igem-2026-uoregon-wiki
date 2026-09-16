@@ -1,0 +1,15 @@
+<div
+    class="placeholder-image"
+    style="
+    width: 100%;
+    aspect-ratio: {{ include.aspect-ratio }};
+    background-color: gray;
+    color: red;
+"
+>
+  this is a placeholder image with the aspect ratio {{ include.aspect-ratio }}
+  </br>
+  {% if include.text %}
+    {{ include.text }}
+  {% endif %}
+</div>

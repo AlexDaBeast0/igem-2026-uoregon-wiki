@@ -4,4 +4,33 @@
 @use 'footer';
 @use 'global_config';
 
+.story {
+    max-width: 48rem;
+    margin: 32px auto;
+}
+
+.projname-banner {
+    img {
+        width: 100%;
+    }    
+}
+
+.story-blocks {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    gap: 32px;
+
+    .story-spacer {
+        font-size: 32px;        
+    }
+    
+    .story-imgblock {
+        img {
+            width: 100%;
+        }
+    }
+}
+
 
