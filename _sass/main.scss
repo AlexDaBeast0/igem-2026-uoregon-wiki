@@ -20,23 +20,26 @@ main {
     
     .content-grid-container {
         display: grid;
-        grid-template-columns: 1fr 2fr;//15em minmax(0, 1fr);
+        grid-template-columns: 1fr 2fr;
         grid-template-rows: auto 1fr;
         grid-template-areas:
-            ". header"
+            "toc header"
             "toc page-text";
         width: 100%;
-    }
-    .grid-item-page-heading {
-        grid-area: header;
-        padding: 16px;
+        gap: 32px;
+        padding: 32px;
     }
     .grid-item-toc {
         grid-area: toc;
+        padding-top: v.$toc-offset;
+    }
+    .grid-item-page-heading {
+        grid-area: header;
+        max-width: v.$max-pagetext-width;
     }
     .grid-item-page-text {
         grid-area: page-text;
-        padding: 16px;
+        max-width: v.$max-pagetext-width;
     }
     @media (max-device-width: v.$mobile-breakpoint) {
         .content-grid-container {
@@ -53,10 +56,6 @@ main {
             position: relative;
             top: auto;
         }
-    }
-    
-    .text-container {
-        max-width: 48rem;
     }
 
     .page-heading {

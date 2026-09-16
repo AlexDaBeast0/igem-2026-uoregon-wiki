@@ -3,6 +3,8 @@
 
 // SCSS:
 $mobile-breakpoint: 480px;
+$max-pagetext-width: 48rem;
+$toc-offset: 82px; // this is kinda a bodge...
 // fonts:
 $font-url-reg: "/uoregon/assets/fonts/UbuntuSans-Medium.woff";
 $font-url-bold: "/uoregon/assets/fonts/UbuntuSans-ExtraBold.woff";
