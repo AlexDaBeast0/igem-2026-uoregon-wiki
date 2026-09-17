@@ -6,24 +6,28 @@
     src: url(v.$font-url-reg);
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "Ubuntu-medium";
     src: url(v.$font-url-bold);
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "Ubuntu-medium";
     src: url(v.$font-url-ital);
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: "Ubuntu-medium";
     src: url(v.$font-url-boldital);
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 body {
