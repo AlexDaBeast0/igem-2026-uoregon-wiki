@@ -1,6 +1,10 @@
-<div class="box">
-    {% if include.heading %}
-    <h3>{{ include.heading }}</h3>
+<div class="callout-box">
+  {% if include.heading %}
+    {% if include.heading-size == 'large' %}
+      <h1>{{ include.heading }}</h1>
+    {% else %}
+      <h3>{{ include.heading }}</h3>
     {% endif %}
-    {{ include.text }}
+  {% endif %}
+  {{ include.text }}
 </div>

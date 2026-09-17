@@ -69,7 +69,7 @@ Do not just insert pictures into Notion, I will ignore that.
 
 All non-vector pictures need to go on the iGEM CDN (content delivery network); in the wiki page, you then link to that picture using a special include. See [how to CDN](https://app.notion.com/p/How-to-use-the-iGEM-CDN-3bfd26e796458049b8ebc0a63cf8fc77?source=copy_link)
 
-If a figure can be made in a vector format (.svg), please do so. This especially applies to plots (they should almost always be .svg). Unfortunately, the CDN doesn’t allow for `.svg` files, so we have a different system. To insert a `.svg` (and only a `.svg`), go to the wiki assets folder for the page you’re working on on our [Google Drive](https://drive.google.com/drive/folders/16NgxMysbzJJAic9iknoVxyJD2Rk85pG2), and add it there. Once I upload it to the gitlab, the URL will be of the format `assets/pages/PAGENAME/FIGURENAME.svg` (so put a correctly written URL in the figure include)
+If a figure can be made in a vector format (.svg), please do so. This especially applies to plots (they should almost always be .svg). Unfortunately, the CDN doesn’t allow for `.svg` files, so we have a different system. To insert a `.svg` (and only a `.svg`), go to the wiki assets folder for the page you’re working on on our Google Drive, and add it there. Once I upload it to the gitlab, the URL will be of the format `assets/pages/PAGENAME/FIGURENAME.svg` (so put a correctly written URL in the figure include)
 
 Once your picture is in the correct place, you can use this include to add it:
 
@@ -112,12 +112,39 @@ To add the bibliography, the include is below. Put it at the end of the page.
 
 # Boxes for text
 
-{% include box.html 
-  heading="A heading"
-  text="Some text for the box"
+{% include box.html
+  heading="A large heading"
+  text="You can put text in callout boxes to draw attention to it"
+  heading-size="large"
 %}
 
-{% include box.html 
-  text="Some text for the box without a header"
+{% include box.html
+  heading="A heading"
+  text="You have a choice of large (# or h1) or small (### or h3) heading"
 %}
+
+{% include box.html
+  text="Or no heading at all"
+%}
+
+Here's how to do it:
+
+```
+{% raw %}
+{% include box.html
+  heading="A large heading"
+  text="You can put text in callout boxes to draw attention to it"
+  heading-size="large"
+%}
+
+{% include box.html
+  heading="A heading"
+  text="You have a choice of large (# or h1) or small (### or h3) heading"
+%}
+
+{% include box.html
+  text="Or no heading at all"
+%}
+{% endraw %}
+```
 
