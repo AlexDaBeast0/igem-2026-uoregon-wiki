@@ -7,10 +7,11 @@ subtitle: A high-level overview of the entire project.
 banner: https://static.igem.wiki/teams/6041/wiki/placeholders/petunias.avif
 ---
 
-
-# Abstract
-
-Nitrogen based fertilizers are an essential component of modern agriculture across the globe. Despite this, only around half of the nitrogen can be taken up by the plants; the rest seeps into the soil and groundwater in the form of nitrate, eventually reaching bodies of water, in addition to wells and sub-surface drainage systems. This excess nitrate can cause major harm to the existing ecosystems, making it difficult for aquatic life to survive. Additionally, drinking nitrate-contaminated water can lead to dangerous health ramifications such as respiratory distress, abdominal cramping, vomiting, thyroid dysfunction, or bladder cancers. To combat this issue, we engineered *Escherichia coli* to uptake excess nitrate and convert it into more biologically useful forms of nitrogen that can later be reused as fertilizers. This approach was chosen as a means to address sustainability in agriculture, access to clean drinking water for rural farmers, and bioremediation in wastewater systems all at the same time.
+{% include box.html 
+    heading="Abstract"
+    heading-size="large"
+    text="Nitrogen based fertilizers are an essential component of modern agriculture across the globe. Despite this, only around half of the nitrogen can be taken up by the plants; the rest seeps into the soil and groundwater in the form of nitrate, eventually reaching bodies of water, in addition to wells and sub-surface drainage systems. This excess nitrate can cause major harm to the existing ecosystems, making it difficult for aquatic life to survive. Additionally, drinking nitrate-contaminated water can lead to dangerous health ramifications such as respiratory distress, abdominal cramping, vomiting, thyroid dysfunction, or bladder cancers. To combat this issue, we engineered *Escherichia coli* to uptake excess nitrate and convert it into more biologically useful forms of nitrogen that can later be reused as fertilizers. This approach was chosen as a means to address sustainability in agriculture, access to clean drinking water for rural farmers, and bioremediation in wastewater systems all at the same time."
+%}
 
 # Background
 

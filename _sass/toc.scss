@@ -24,3 +24,12 @@
         text-decoration: none;
     }
 }
+
+@media (max-device-width: v.$mobile-breakpoint) {
+    .toc-container {
+        padding: 20px;
+        border-bottom: none;
+        border: 0.05em solid var(--color-secondary-text);
+        border-radius: v.$border-rounding;
+    }
+}

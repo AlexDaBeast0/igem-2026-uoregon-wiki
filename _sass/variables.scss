@@ -4,7 +4,8 @@
 // SCSS:
 $mobile-breakpoint: 480px;
 $max-pagetext-width: 48rem;
-$toc-offset: 82px; // this is kinda a bodge...
+$toc-offset: 127px; // this is kinda a bodge...
+$border-rounding: 10px; 
 // fonts:
 $font-url-reg: "/uoregon/assets/fonts/UbuntuSans-Medium.woff";
 $font-url-bold: "/uoregon/assets/fonts/UbuntuSans-ExtraBold.woff";
@@ -80,14 +81,18 @@ $color-callout-d: #534956;
     
 
     --sides-padding: 10%;
-    --font-size: 13pt;
     --font-size-small: 10pt;
+    --font-size: 13pt;
+    --font-size-large: 18pt;
+    --font-size-xlarge: 32pt;
     --line-spacing: 1.5;
     
     @media (max-device-width: $mobile-breakpoint) {
         --sides-padding: 10%;
-        --font-size: 32pt;
         --font-size-small: 24pt;
+        --font-size: 32pt;
+        --font-size-large: 40pt;
+        --font-size-xlarge: 64pt;
         --line-spacing: 1.6;
     }
 

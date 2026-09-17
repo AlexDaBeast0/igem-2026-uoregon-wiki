@@ -112,12 +112,39 @@ To add the bibliography, the include is below. Put it at the end of the page.
 
 # Boxes for text
 
-{% include box.html 
-  heading="A heading"
-  text="Some text for the box"
+{% include box.html
+  heading="A large heading"
+  text="You can put text in callout boxes to draw attention to it"
+  heading-size="large"
 %}
 
-{% include box.html 
-  text="Some text for the box without a header"
+{% include box.html
+  heading="A heading"
+  text="You have a choice of large (# or h1) or small (### or h3) heading"
 %}
+
+{% include box.html
+  text="Or no heading at all"
+%}
+
+Here's how to do it:
+
+```
+{% raw %}
+{% include box.html
+  heading="A large heading"
+  text="You can put text in callout boxes to draw attention to it"
+  heading-size="large"
+%}
+
+{% include box.html
+  heading="A heading"
+  text="You have a choice of large (# or h1) or small (### or h3) heading"
+%}
+
+{% include box.html
+  text="Or no heading at all"
+%}
+{% endraw %}
+```
 

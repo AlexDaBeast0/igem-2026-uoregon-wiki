@@ -76,7 +76,7 @@ nav {
         padding-top: 20px;
                 
         background-color: var(--color-accent-secondary);
-        border-radius: 10px;
+        border-radius: v.$border-rounding;
         
         display: none;
     }
@@ -166,10 +166,10 @@ nav {
                 width: 6rem;
                 height: 0.9rem;
                 background-color: var(--color-primary-background);
-                border-radius: 10px;
+                border-radius: v.$border-rounding;
                 padding: 0;
                 margin: 0;
-                transition: transform .5s ease;
+                transition: transform .3s ease;
             }
         }
     }

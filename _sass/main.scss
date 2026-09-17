@@ -48,9 +48,15 @@ main {
                 "header"
                 "toc"
                 "page-text";
+            padding: 5%;
+            gap: 64px;
         }
         .grid-item-toc {
-            border-bottom: 0.05em solid var(--color-secondary-text); 
+            border-bottom: 0.05em solid var(--color-secondary-text);
+            padding-top: 0;
+        }
+        .grid-item-page-heading, .grid-item-page-text {
+            max-width: 100%;
         }
         .toc-container {
             position: relative;
@@ -61,13 +67,20 @@ main {
     .page-heading {
         h1 {
             border: none;
-            margin-bottom: 10px;
+            margin-bottom: 24px;
+            font-size: var(--font-size-xlarge);
         }
         span {
-            color: var(--color-secondary-text);
+            font-size: var(--font-size-large);
+            line-height: 1;
         }
-        padding-bottom: 10px;
+        padding-bottom: 24px;
         border-bottom: 0.05em solid var(--color-secondary-text);
+    }
+    @media (max-device-width: v.$mobile-breakpoint) {
+        .page-heading {
+            border-bottom: none;
+        }
     }
     
     
@@ -93,15 +106,14 @@ main {
 
 }
 
-.box {
-  	background-color: var(--color-callout); 
-  	border-radius: 8px;
-	padding: 16px 16px;
+.callout-box {
+    background-color: var(--color-callout); 
+    border-radius: v.$border-rounding;
+    padding: 16px 16px;
     margin: 16px 0;
-    h3 {
-        border-bottom: solid black 1px;
+    h1, h3 {
+        border-bottom: solid var(--color-secondary-text) 1px;
         padding-bottom: 2px; //typography tweak
         margin: 0 0 8px 0;
     }
-    
 }
