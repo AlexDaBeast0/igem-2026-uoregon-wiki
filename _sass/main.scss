@@ -106,14 +106,29 @@ main {
 
 }
 
-.callout-box {
+.callout-box, .collapsible-box {
     background-color: var(--color-callout); 
     border-radius: v.$border-rounding;
     padding: 16px 16px;
     margin: 16px 0;
-    h1, h3 {
+    h1, h3, summary {
         border-bottom: solid var(--color-secondary-text) 1px;
         padding-bottom: 2px; //typography tweak
         margin: 0 0 8px 0;
     }
+}
+.collapsible-box {
+    summary::marker,
+    :is(::-webkit-details-marker) {
+        content: "+ ";
+        font-family: monospace;
+        font-weight: bold;
+    }
+    h3 {
+        display: inline;
+        border: none;
+    }
+}
+.collapsible-box[open] summary::marker {
+    content: "− ";
 }

@@ -127,6 +127,12 @@ To add the bibliography, the include is below. Put it at the end of the page.
   text="Or no heading at all"
 %}
 
+{% include collapsible-box.html
+    header="You can also make collapsible boxes; those must have a heading."
+    text="This text can be hidden if you click on the minus icon. You can also make it hidden by default"
+    open-by-default="true"
+%}
+
 Here's how to do it:
 
 ```
@@ -145,6 +151,13 @@ Here's how to do it:
 {% include box.html
   text="Or no heading at all"
 %}
+
+{% include collapsible-box.html
+    header="You can also make collapsible boxes; those must have a heading"
+    text="This text can be hidden if you click on the minus icon. You can also make it hidden by default"
+    open-by-default="true"
+%}
 {% endraw %}
 ```
+
 

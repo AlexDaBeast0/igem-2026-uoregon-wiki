@@ -1,0 +1,4 @@
+<details {% if include.open-by-default == "true" %}open{% endif %} class="collapsible-box">
+  <summary><h3>{{ include.header }}</h3></summary>
+  {{ include.text }}
+</details>
