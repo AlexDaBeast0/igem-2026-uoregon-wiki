@@ -3,37 +3,39 @@
 
 @font-face {
     font-family: "Ubuntu-medium";
-    src: url(v.$font-url-reg);
-    font-weight: normal;
+    src:
+        url("/uoregon/assets/fonts/UbuntuSans-variable.woff2") format("woff2-variations"),
+        url("/uoregon/assets/fonts/UbuntuSans-variable.woff2") format("woff2 supports variations");
+    font-weight: 100 800;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Ubuntu-medium";
-    src: url(v.$font-url-bold);
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Ubuntu-medium";
-    src: url(v.$font-url-ital);
-    font-weight: normal;
+    src:
+        url("/uoregon/assets/fonts/UbuntuSans-Italic-variable.woff2") format("woff2-variations"),
+        url("/uoregon/assets/fonts/UbuntuSans-Italic-variable.woff2") format("woff2 supports variations");
+    font-weight: 100 800;
     font-style: italic;
     font-display: swap;
 }
-@font-face {
-    font-family: "Ubuntu-medium";
-    src: url(v.$font-url-boldital);
-    font-weight: bold;
+// config below is specific to Ubuntu to make it thicker (like the Medium setting of the non-variable font)
+html {
+    font-family: "Ubuntu-medium", v.$font-fallback-stack;
+    font-size: var(--font-size);
+    font-weight: 470;
+}
+:where(
+    h1, h2, h3, h4, h5, h6,
+    strong, b
+) {
+    font-weight: 800;
+}
+em {
     font-style: italic;
-    font-display: swap;
 }
 
 body {
-    // text config:
-    font-family: "Ubuntu-medium", v.$font-fallback-stack;
-    font-size: var(--font-size);
     color: var(--color-primary-text);
     background-color: var(--color-primary-background);
     line-height: var(--line-spacing);
