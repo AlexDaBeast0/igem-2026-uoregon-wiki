@@ -11,6 +11,8 @@ banner: https://static.igem.wiki/teams/6041/wiki/placeholders/petunias.avif
 
 (note that you don't have to write the title ("How to wiki") here, it's generated automatically; if you want to change the title and subtitle ("For now, this page demonstrates how to write wiki pages."), change them on the Notion. the page hint (that is displayed in the navigation bar on top of the page) can be also changed there.)
 
+
+
 The wiki uses markdown (a simple markup language, same as the one used in Notion) for all pages. Please do not embed HTML code directly---I (Fedor) will ignore that and reject your edit. If you want more complex functionality, contact me directly. For consistency, I am trying to keep all pages in this mostly-plain-text style. 
 
 ANY FORMATTING NOT EXPLICITLY OUTLINED HERE WILL PROBABLY NOT WORK ON THE WIKI AND WILL BE REJECTED.
