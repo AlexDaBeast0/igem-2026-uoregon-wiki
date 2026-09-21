@@ -18,9 +18,9 @@ pages:
           - title: Protocols
             url: /protocols
             hint: Protocols used in the lab
-          - title: Uptake
-            url: /uptake
-            hint: Uptake module
+          - title: Chassis
+            url: /chassis
+            hint: Chassis module
           - title: Nitrogen storage
             url: /nitrogen-storage
             hint: Nitrogen storage module

@@ -7,193 +7,370 @@ subtitle: This is the education page.
 banner: https://static.igem.wiki/teams/6041/wiki/placeholders/petunias.avif
 ---
 
+# Education: Pedagogy and Teaching Philosophy
+
+For wiki reviewers, photos from each event can be previewed here: 
+
+https://drive.google.com/drive/folders/1wCMQG46riQ0E64h-JwlaEVAttzknpsmT?usp=sharing
+
 # Our Research Question
 
-Our education programs were developed around the question: ‘How can we make synthetic biology accessible and engaging for diverse student audiences?’
+Synthetic biology bridges biology, engineering, and creative problem-solving. Because of both the breadth and depth of expertise the field encompasses, we tailored our educational curricula to meet the needs and perspectives of diverse knowledge levels. We wanted to create opportunities for students with varying prior knowledge about synthetic biology could meaningfully engage with this interdisciplinary field.
 
-INSERT COLLAGE OF OUR THREE EVENTS. HYPERLINKED TO EVENTS PAGE.
+Our education programs were therefore developed around the central question:
 
-To answer this question, we designed an iterative sequence of workshops tailored to three distinct audiences.
+{% include box.html
+  text="How can we make synthetic biology accessible and engaging for diverse student audiences?"
+%}
 
-“Workshop 1: Intro to Synthetic Biology” is a one-hour workshop paired with a worksheet for high school students with minimal science background and mixed career interests.
+Rather than developing one generic curriculum and delivering it to every audience, we approached education as an iterative process and a conversation between us as educators and the students as learners. We modeled our program development after a DBTL (Design, Build, Test, Learn) framework, modeling our workshops based on the post-event experiences of our student audiences.
 
-“Workshop 2: Engineering SynBio Solutions” is a two-hour workshop paired with an illustrated workbook and comic for high school students with minimal science background and an interest in studying science. 
+[INSERT COLLAGE OF 3 EVENTS. HYPERLINK TO EVENTS PAGE]
 
-“Workshop 3: SynBio Solutions to Real-World Problems” is a two-hour workshop paired with an illustrated workbook and hands-on activities for first-and-second-year undergraduate students studying a science discipline.
+Across three iterations, we developed workshops for audiences with increasing amounts of prior knowledge.
 
-For more photos from each workshop, visit our events page!
+**Workshop 1:** **Intro to Synthetic Biology**
+
+**Audience:** High school students with minimal science background and diverse career interests
+
+**Format:** 1-hour workshop + worksheet
+
+**Workshop 2: Engineering SynBio Solutions**
+
+**Audience:** High school students with minimal science background who are interested in science
+
+**Format:** 2-hour workshop + fully illustrated workbook + comic
+
+**Workshop 3: SynBio Solutions to Real-World Problems**
+
+**Audience:** First- and second-year undergraduate science students
+
+**Format:** 2-hour workshop + illustrated workbook + hands-on activities
+
+Each workshop built on what we learned from the previous event, resulting in an informed process of improving our curriculum as we tailor it to our audiences. Extensive photo documentation from our programs can be viewed on the Events page [HYPERLINK].
+
+{% include box.html
+  heading="Our Mission"
+  text="To make synthetic biology accessible and engaging for high school and undergraduate students through modular, differentiated STEAM curricula grounded in Universal Design for Learning."
+  heading-size="large"
+%}
+
+Our goal is not to remove the complexity of synthetic biology as we design curricula for our student audiences. Instead, we aim to create pathways that allow students with different levels of prior knowledge and different interests to engage with this complexity. We accomplish this by introducing content in a manner that naturally builds on broader knowledge to guide students to higher level thinking when more complex concepts are introduced.
 
 # The Challenge
 
-High school and early undergraduate science education is often structured around established disciplines such as biology, chemistry, physics, and mathematics. While these subjects are widely represented in U.S. public high schools, more specialized STEM opportunities are less consistently available. INSERT STATISTIC.
+High school and early-undergraduate science education is often organized around established disciplines such as biology, chemistry, physics, and mathematics. While these subjects are widely represented in U.S. public schools, opportunities to engage with more specialized and interdisciplinary areas of STEM are less consistently available.
 
-This presents a particular challenge for interdisciplinary fields such as synthetic biology and bioengineering, which draw on concepts from biology, engineering, mathematics, bioethics, and science communication. Synthetic biology asks students to move beyond understanding established scientific concepts and instead integrate knowledge across these disciplines to design biological systems that address real-world problems.
+[INSERT STATISTIC + CITATION]
+
+This presents a particular challenge for synthetic biology and bioengineering as these fields draw on concepts from multiple disciplines such as engineering, bioethics, and science-communication.
+
+Synthetic biology also asks students to move beyond simply understanding or memorizing established scientific concepts. Students must integrate knowledge across disciplines, identify problems, develop possible solutions, and consider how biological systems could be engineered to address those problems.
+
+For students with limited prior exposure to the field, this transition from learning scientific concepts to using those concepts to design biological solutions can be daunting without appropriate scaffolding.
+
+We therefore designed our education program around a simple principle:
+
+{% include box.html
+  text="Accessibility should lower the barrier of entry into complex science, not the complexity of the science itself."
+%}
 
 # Our Teaching Philosophy
 
-For students with limited prior exposure to the field, such a leap without proper scaffolding can feel daunting. We therefore developed our education initiatives to create learning experiences that make synthetic biology accessible to students from a wide range of backgrounds without compromising technical rigor.
+Our curriculum is grounded in two interconnected principles: **Universal Design for Learning (UDL)** and **STEAM**.
 
-Our pedagogy is grounded in two interconnected principles: STEAM (Science, Technology, Engineering, Art, and Mathematics) and Universal Design for Learning (UDL).
+## Student Centered Learning Through UDL
 
-## STEAM: Making Science Creative and Accessible
+Our workshops emphasize **student voice** and **active participation**.
 
-Creativity is fundamental to both scientific problem-solving and science education. When learning how to think like synthetic biologists, students identify problems, develop possible solutions, and determine how biological systems can be engineered to achieve a desired outcome. Our curriculum reflects this creative process by incorporating STEAM into the learning experience.
+Direct interaction with students allows educators to respond to questions, clarify misconceptions, and adapt explanations based on students’ prior knowledge. Rather than treating education as a one-way transfer of information, we create opportunities for students to participate in discussions, work through problems in a collaborative manner, and brainstorm their own ideas.
 
-Art is central to our approach because it provides a unique means of communicating and interpreting scientific concepts. We incorporated illustrations, diagrams, and sequential art as storytelling tools in all of the worksheets and workbooks that we created for our events. By pairing technical explanations with engaging visuals and creative activities, we aim to make complex concepts more approachable while maintaining scientific rigor.
+This approach is grounded in **Universal Design for Learning (UDL)**, a framework centered on providing multiple means of **engagement, representation, and action and expression**. [INSERT CAST UDL GUIDELINES CITATION]
 
-## Student-Centered Learning & Universal Design for Learning
+We incorporated these principles throughout our curricula by offering written explanations, visual representations, hands-on activities, guided discussion, and opportunities for students to communicate their own ideas.
 
-Our workshops emphasize student voice and choice. Direct interaction with students allows us to respond to individual questions, clarify concepts, and adapt explanations to differing levels of prior knowledge. Rather than treating education as a one-way transfer of information, we create opportunities for students to actively participate in the learning process and engage with each other’s ideas.
+In this manner, students encounter and interact with synthetic biology through multiple pathways rather than relying on a single mode of didactic instruction.
 
-This approach is grounded in Universal Design for Learning (UDL), a framework centered on providing multiple means of engagement, representation, and action and expression (INSERT CAST UDL GUIDELINES CITATION).
+## STEAM: Making Science Accessible and Engaging
 
-We incorporated these principles throughout our curricula through our illustrated workbooks. By combining written explanations, visual representations, hands-on activities, and guided discussion, we provide students with multiple ways to access, engage with, and demonstrate their understanding of synthetic biology.
+Creativity is fundamental to scientific problem-solving. Synthetic biologists use creativity to identify problems, design possible solutions, and determine how biological systems could be engineered to achieve a desired outcome.
 
-# Mission
+Our curriculum reflects this creative process through **STEAM: Science, Technology, Engineering, Art, and Mathematics**.
 
-To make synthetic biology accessible and engaging for high school students and undergraduates through comprehensive, modular, and differentiated STEAM (Science, Technology, Engineering, Art, and Math) curricula grounded in Universal Design for Learning (UDL): multiple means of engagement, representation, and action and expression.
+Art plays a particularly important role in our approach. Scientific illustrations, diagrams, comics, and other forms of visual storytelling can provide students multiple means of interacting with scientific ideas.
 
-# Vision
+We therefore incorporated visual communication throughout our curricula. We used intentionally designed illustrations to explain concepts, tell scientific stories, guide activities, and help students visualize abstract processes that cannot be directly observed.
 
-A future where every student has the opportunity to explore synthetic biology through curricula tailored to their needs and perspectives, with curiosity, confidence, and creativity. A learning community where students feel empowered to ask questions, engage in dialogue, and engineer solutions to real-world problems.
+By combining technical explanations with creative and visual activities, we made complex concepts more approachable while maintaining scientific rigor.
 
-# Analysis of Our Education Programs Through Our Pedagogical Framework
+# Designing Education through DBTL
 
-We applied the DBTL (Design, Build, Test, Learn) cycle to our education programs as well. In an effort to meet the goal of creating a place for students to confidently explore synthetic biology through STEAM and UDL, we developed our curricula to follow a workshop-model.
+We treated curriculum development as an iterative design process, using the DBTL cycle to guide each workshop iteration.
 
-A workshop model has three main components: a mini-lesson where a concept is taught through direct instruction or an open-ended activity, a workshop where students practice the new concept independently or in small groups, and a debrief after the workshop to discuss what students have learned (CITE).
+In synthetic biology, DBTL allows researchers to systematically design, build, test, and refine biological systems. We applied this same iterative mindset to our educational programs: each workshop gave us an opportunity to test our assumptions about what students needed, learn from their responses, and use those observations to redesign the next iteration.
 
-Such a model creates opportunities for **active learning** while providing structured **scaffolding** that helps manage **cognitive load** and progressively engages students in **higher-order thinking.**
+## Our Education DBTL Cycle
 
-| **DBTL** | **Education Interpretation** |
-| --- | --- |
-| Design | Identify audience needs and determine how the curriculum should be adapted |
-| Build | Create lesson plans, worksheets, workbooks, activities, and supporting materials |
-| Test | Implement the curriculum with students |
-| Learn | Analyze observations and feedback and use them to inform the next iteration |
+**Design:** Identify the audience, prior knowledge, interests, learning objectives, and educational needs.
 
-# Workshop 1: Intro to Synthetic Biology
+**Build:** Create lesson plans, worksheets, workbooks, comics, activities, and supporting materials.
 
-## Design
+**Test:** Implement the curriculum with students and observe their participation, questions, and responses.
 
-- interactive questions
-- worksheet
-- experimental design thought process
+**Learn:** Analyze observations and feedback to identify what should be maintained, changed, and developed further. We would then use what we learned to inform the next workshop.
 
-## Build
+[INSERT VISUAL FLOWCHART OF W1 —> LEARN —> W2 —> LEARN —> W3]
 
-With this in mind, we developed our first workshop: “Workshop 1: Intro to Synthetic Biology”. This was a one-hour workshop paired with a worksheet for high school students with minimal science background and mixed career interests.
+Our events were also structured around a **workshop model** consisting of three main components:
 
-INSERT PDF OF WORKSHEET AND PDF OF SLIDES
+**Mini-lesson:** Introduce a concept through direct instruction, discussion, or an open-ended activity.
 
-worksheet_edu_wksp_ohs (1).pdf.pdf)
+**Workshop:** Give students an opportunity to practice or apply the concept independently or in small groups.
 
-slides_edu_wksp_ohs (1).pdf.pdf)
+**Debrief:** Reflect on what students observed and learned. [CITE WORKSHOP MODEL]
 
-INSERT NGSS STANDARD
+This structure allowed us to combine direct instruction with active learning while providing students with opportunities to practice new concepts before applying them to increasingly complex scenarios.
 
-INSERT LEARNING OBJECTIVES
+# Iteration 1
+
+**Workshop 1: Intro to Synthetic Biology**
+
+[INSERT ILLUSTRATION OF EVENT]
+
+## **Design**
+
+Our first workshop was designed for high school students with minimal science background and diverse career interests.
+
+Because students were likely to have different levels of prior scientific knowledge, we prioritized three goals:
+
+- Introduce synthetic biology
+- Establish relevance through real-world examples
+- Give students an initial experience with scientific problem-solving
+
+To create an engaging experience for our audience, we designed the workshop around three guiding questions:
+
+**What is synthetic biology?**
+
+**Why do synthetic biologists work on real-world problems?**
+
+**What does synthetic biology look like in the laboratory?**
+
+Interactive questions were incorporated throughout the lesson to encourage students to connect new ideas to their own experiences and interests.
+
+We also developed a worksheet with illustrations and guiding questions to review the Central Dogma, learn parts of a plasmid, and provide students the opportunity to develop their own synthetic biology research project.
+
+## **Build**
+
+We created a one-hour presentation to accompany our worksheet.
+
+[INSERT PDF OF WORKSHEET]
+
+[INSERT PDF OF SLIDES]
+
+[INSERT NGSS STANDARD]
+
+The curriculum introduced synthetic biology through the real-world example of our own project, AquaFlock. Students then learned about plasmids and their parts as synthetic biology tools, and were given the opportunity to design a genetically engineered bacteria to solve a problem.
 
 ## Test
 
-INSERT ONE PHOTO
+We delivered the workshop in June to 30 high-school-aged counselors at the Oregon Humane Society.
 
-LINK TO EVENTS PAGE
+[INSERT ONE PHOTO FROM THE EVENT]
 
-**stats and what did we do:**
+These students came from different background and had varying levels of prior exposure to science.
 
-- how many students
-- we went to the humane society and gave a talk to the high school aged counselors
-- student background (anecdotal, grab quotes)
+During the workshop, we introduced synthetic biology through real-world examples, broke down the project ideation process behind AquaFlock, and connected these ideas to what synthetic biology looks like in a laboratory setting.
 
-**scaffolding** of content:
-
-- what is synbio (real-world examples)
-- how do synthetic biologists decide which real-world problems to tackle (AquaFlock breakdown)
-- now that students know what synbio is, what does it look like in lab?
+[INSERT QUOTE]
 
 ## Learn
 
-impact
+Our first workshop shows us that **accessibility begins with understanding what students already know and why the subject matters to them**.
 
-- grab quotes from camp staff and counselors
+Through our observations and conversations with students and camp staff, we identified several areas for improvement.
 
-to incorporate into round 2
+**Establish Prior Knowledge:** Students needed additional context regarding foundational biological concepts before learning about how to engineer these existing biological tools.
 
-- we need to better establish prior knowledge (central dogma)
-- need to emphasize relevance for students (more real-world examples)
-- need shorter turnover time between workshop cycles to reduce cognitive load
-- shorter turnover time will also keep students engaged and more eager to discuss with one another and us
+**Increase Real-World Relevance:** Additional examples could help students understand why synthetic biology matters beyond the classroom.
 
-These observations informed the design of our second workshop, particularly our approach to establishing prior knowledge, contextualizing synthetic biology through real-world examples, and structuring transitions between activities.
+**Improve Transitions:** Shorter transitions between activities could reduce cognitive load and maintain continuity throughout the workshop.
 
-# Workshop 2: Engineering SynBio Solutions
+**Create More Opportunities for Interaction:** More frequent opportunities for students to discuss ideas with one another and with educators could support engagement.
 
-## Design
+[INSERT CAMP STAFF QUOTE]
 
-- **experiential learning** cycle: hands-on activity —> observations and reflection —> connecting observations to new knowledge —> applying knowledge to a new situations
-- still through a workshop framework
-- really emphasizing **scaffolding** (being extra cognizant of the order in which we’re delivering information to students)
-- pull in **bloom’s taxonomy** to drive home the point about scaffolding
+[INSERT STUDENT QUOTE]
 
-# Build
+These observations directly informed our second iteration. We redesigned the curriculum to establish foundational knowledge more deliberately, emphasize relevance, and provide a more structured sequence of active learning experiences.
 
-edu_wksp_sail_slides.pdf
+# Iteration 2
 
-edu_wksp_sail_workbook (1).pdf.pdf)
+**Workshop 2: Engineering SynBio Solutions**
 
-- what the process was like building the workbook
-- we had a bigger group of educators with diverse perspectives so we could tailor it to a more diverse audience
-- anecdotal quotes from our conversation with Raghu
-
-# Test
-
-INSERT ONE PHOTO
-
-LINK TO EVENTS PAGE
-
-**stats and what did we do:**
-
-- we got to bring a 2 hr workshop to hs kids from diverse backgrounds who are interested in science
-- how many kids
-
-**scaffolding of content:**
-
-- what is synbio and why is it relevant to our audience
-- central dogma in comic form
-- synbio tools (CRISPR and plasmids)
-- genetic circuits
-- DIY synbio experimental design take-home activity
-
-# Learn
-
-Students demonstrated engagement with the material through follow-up questions that extended beyond the concepts presented in the workshop. For example, students asked whether multiple synthetic biology tools could be used simultaneously.
-
-- ask Raghu for a quote
-- now that we know how to approach bringing synbio to hs students, we want to bring it to underclassmen undergraduates as well
-
-The success of this approach demonstrated that students with limited prior exposure could engage with technical synthetic biology concepts when appropriate scaffolding and opportunities for active participation were provided. We therefore adapted the curriculum for a new audience: first-and-second-year undergraduates studying science.
-
-# Workshop 3: SynBio Solutions to Real-World Problems
+[INSERT ILLUSTRATION OF THE EVENT]
 
 ## Design
 
-- how can we **differentiate** our curriculum to adjust to the needs and perspectives of our new audience? we ask this question with every iteration
+Our second workshop was designed for high school students with minimal prior exposure to synthetic biology but a more specific interest in science.
+
+This audience allowed us to increase the technical depth of the curriculum while retaining the accessibility principles developed during Workshop 1.
+
+We therefore focused on **scaffolding:** carefully sequencing concepts so that each new idea builds on knowledge that students have already encountered.
+
+We structured the learning experience around:
+
+[INSERT FLOWCHART]
+
+Experience —> Observe —> Explain —> Apply —> Reflect
+
+Students first encountered a concept through an activity or example, reflected on what they observed, connected those observations to scientific knowledge, and then applied that knowledge to a new situation.
+
+We retained the workshop model of mini-lesson —> workshop —> debrief, but became more deliberate about the order in which information was introduced.
+
+Our goal was to move students progressively from foundational biology toward synthetic biology tools and, ultimately, experimental design.
 
 ## Build
 
-edu_wksp_undergrad_slides (3).pdf.pdf)
+When developing Workshop 2, we emphasized considering how students with different learning backgrounds might encounter and interpret the same material.
 
-hain_kim_synbio_tools_cards (1).png.png)
+We illustrated a workbook, comic, presentation, and hands-on activities.
 
-igem_undergrad_synbio_workshop_flyer.jpg
+[INSERT PDF OF WORKBOOK]
 
-hain kim workbook (2).pdf.pdf)
+[INSERT PDF OF SLIDES]
+
+[INSERT QUOTE ABOUT CURRICULUM DEVELOPMENT]
+
+The curriculum’s learning objectives are modeled after the measurable verbs of **Bloom’s Taxonomy** (Remember, Understand, Apply, Analyze, Evaluate, Create).
+
+[INSERT FIGURE OF BLOOM’S TAXONOMY AND WORDS RELATED TO EACH LEVEL]
+
+**Understand why synthetic biology matters:** We introduced synthetic biology through real-world problems and examples relevant to our student audience.
+
+**Explain the Central Dogma of molecular biology:** We illustrated a comic to introduce the Central Dogma and establish foundational knowledge before introducing synthetic biology tools.
+
+**Apply synthetic biology tools to real-life scenarios:** Students were introduced to CRISPR and plasmids, and then given two potential scenarios to match which tool could be used to solve which problem.
+
+**Evaluate the logic of synthetic genetic circuits:** Students explored genetic circuits and how multiple biological components can be designed to produce a desired outcome.
+
+**Design a bioengineered solution to a real-world problem:** Students applied what they’d learned through a hands-on experimental design activity.
+
+[INSERT FLOW CHART OUTLINING:
+
+- What is synthetic biology and how is it relevant to our lives?
+- How do cells understand this instructions?
+- How can scientists give cells new instructions and functions?
+- How can scientists tell cells when to use new instructions?
+- How can we learn to think like synthetic biologists?
+
+{% include box.html
+  text="This progression allowed students to encounter each concept as a foundation for the next, rather than as an isolated piece of information."
+%}
 
 ## Test
 
-october 2
+We delivered this two-hour workshop to 20 high school students from diverse learning backgrounds who are interested in science as part of an existing STEM summer camp at the University of Oreogn, SAIL (Student Academy to Inspire Learning).
+
+[INSERT ONE PHOTO FROM THE EVENT]
+
+Students progressed form foundational biological concepts to increasingly technical synthetic biology topics. We began with the Central Dogma, then transitioned into CRISPR and plasmids, building up to genetic circuits and experimental design.
+
+Despite the increased complexity, students actively participated and continued asking questions beyond the concepts explicitly presented in the workshop.
+
+For example, one student asked whether multiple synthetic biology tools could be used simultaneously.
+
+[INSERT STUDENT QUOTE]
+
+[INSERT RAGHU QUOTE]
 
 ## Learn
 
-october 2
+Workshop 2 showed us that **students with limited prior exposure to synthetic biology can engage with technical concepts when those concepts are introduced through deliberate scaffolding and active participation**.
+
+This sequence from foundation biology —> synthetic biology tools —> genetic circuits —> experimental design gave students a pathway for moving from simply understanding biological systems toward thinking like engineers.
+
+We also saw the value of providing multiple ways for students to engage with the same concepts. The comic, workbook, discussion, and hands-on activities allows students to encounter and apply information through different forms of representation and expression.
+
+Having established an approach for introducing synthetic biology to high school students, we turned to a new audience:
+
+{% include box.html
+  text="How should we differentiate synthetic biology education for students who already took general science classes during high school?"
+%}
+
+This question became the starting point for our third iteration.
+
+# Iteration 3
+
+**Workshop 3: SynBio Solutions to Real-World Problems**
+
+[INSERT ILLUSTRATION OF THE EVENT]
+
+## Design
+
+Our third workshop was designed for first- and second-year undergraduate students studying a science discipline.
+
+As with every iteration, we began by asking:
+
+{% include box.html
+  text="How can we adapt our curriculum to the needs, prior knowledge, and perspectives of this audience?"
+%}
+
+Unlike our previous high school audiences, these students were expected to have greater familiarity with scientific vocabulary.
+
+Rather than spending as much time introducing foundational biology, we had the opportunity to shift the emphasis towards understanding synthetic biology in a comprehensive sense, including the ethics of experimental design as well as using art to communicate the science that our students have learned.
+
+This shift allowed us to explore how the scaffolding developed through our first two workshops could be adapted rather than simply repeated for a new audience.
+
+## Build
+
+We adapted and teaching strategies from our previous workshops while increasing the emphasis on application and problem solving.
+
+Our materials included:
+
+[INSERT PDF OF WORKBOOOK]
+
+[INSERT PDF OF SYNBIO TOOLS CARDS]
+
+[INSERT WORKSHOP FLYER]
+
+[INSERT PDF OF SLIDES]
+
+[INSERT PDF OF SLIDES]
+
+This workshop combines a new illustrated workbook with hands-on activities designed to give students opportunities to learn how to think like synthetic biologists, rather than simply memorize new vocabulary.
+
+## Test
+
+[INSERT PHOTO AFTER EVENT]
+
+## Learn
+
+After implementation, we will evaluate this workshop using the same DBTL framework applied to our previous programs.
+
+The results of this iteration will inform future versions of our curriculum and help us identify which elements of our approach can be adapted across different educational settings.
+
+# What We Learned
+
+Across our three iterative workshops, our curriculum evolved alongside our understanding of our student audience.
+
+**Workshop 1: Intro to Synthetic Biology** taught us to establish a foundation. Students benefit from understanding both the scientific background they need and why synthetic biology is relevant to them.
+
+**Workshop 2: Engineering SynBio Solutions** taught us to scaffold complexity. Students can engage with increasingly technical synthetic biology concepts when information is presented deliberately and paired with opportunities to apply what they learn.
+
+**Workshop 3: SynBio Solutions to Real-World Problems** allows us to explore differentiation. For students who already have experience studying science, we can shift the emphasis from introducing synthetic biology toward integrating knowledge and building depth alongside breadth of knowledge by including ethics and science-communication.
+
+Our DBTL process therefore became more than just a means of structuring our education program. It became a way to meet our students at their knowledge level, tailoring our program to create an accessible and engaging experience of thinking like synthetic biologists. Through this framework we were able to continuously ask what our learners needed and use their responses to shape the next iteration.
+
+{% include box.html
+  text="Accessible education does not require making complex science less technical. It requires designing intentional pathways that allow different learners to reach that complexity."
+%}
+
+# Our Vision
+
+We envision a future where students from diverse backgrounds have opportunities to explore synthetic biology through curricula designed around their needs, perspectives, and experiences.
+
+We hope to build learning communities where students feel empowered to ask questions, engage in scientific dialogue, and approach real-world problems with curiosity, confidence, and creativity.
+
+Ultimately, our vision is not simply to teach students about synthetic biology.
+
+It’s to give more students the opportunity to see themselves as people who can use it to create a positive impact by engineering synthetic biology solutions to real-world problems.
