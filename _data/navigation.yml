@@ -15,9 +15,6 @@ pages:
     children:
       - title: Wet lab
         children:
-          - title: Protocols
-            url: /protocols
-            hint: Protocols used in the lab
           - title: Chassis
             url: /chassis
             hint: Chassis module
@@ -27,7 +24,10 @@ pages:
           - title: Flocculation
             url: /flocculation
             hint: Flocculation module
-
+          - title: Protocols
+            url: /protocols
+            hint: Protocols used in the lab
+            
       - title: Dry lab
         children:
           - title: Metabolic Model

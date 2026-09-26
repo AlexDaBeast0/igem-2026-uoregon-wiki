@@ -4,16 +4,98 @@
 @use 'footer';
 @use 'global_config';
 
+@font-face {
+    font-family: "DarumadropOne";
+    src:
+        url("/uoregon/assets/fonts/DarumadropOne-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background: linear-gradient(
+        to bottom,
+        #90a4d4 0%,
+        var(--color-primary-background) 50rem
+    );
+}
+
+img {
+    width: 100%;
+}
+
+.logo-container {
+    max-width: 60rem;
+    margin: 32px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-column-gap: 10px;
+
+    .side-duck {
+        width: 12rem;
+    }
+}
+
+.dialog-container {
+    max-width: 48rem;
+    margin: 32px auto;
+    position: relative;
+    
+    #problem-bubble-wrapper {
+        position: relative;
+        margin-bottom: -150px;
+            
+        #problem-bubble {
+            display: block;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            //z-index: -1;
+        }
+
+        #problem-bubble-text {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            
+            text-align: left;
+            z-index: 1;
+        }
+    }
+    #problem-footer {
+        position: relative;
+    }
+
+    #solution-wrapper {
+        #solution-bubble-wrapper {
+            position: relative;
+            margin-bottom: -170px;
+            
+            #solution-bubble {
+                display: block;
+            }
+
+            #solution-bubble-text {
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                
+                text-align: right;
+                z-index: 1;
+            }
+        }
+        #solution-footer {
+            position: relative;
+        }
+    }
+}
+
+
 .story {
     max-width: 48rem;
     margin: 32px auto;
 }
 
-.projname-banner {
-    img {
-        width: 100%;
-    }    
-}
 
 .story-blocks {
     display: flex;
@@ -34,3 +116,12 @@
 }
 
 
+.artfont-lg {
+    font-family: "DarumadropOne", sans-serif;
+    font-size: 36pt;
+}
+
+.artfont-med {
+    font-family: "DarumadropOne", sans-serif;
+    font-size: 32pt;
+}
