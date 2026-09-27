@@ -38,35 +38,42 @@ img {
 }
 
 .dialog-container {
-    max-width: 48rem;
+    max-width: 70rem;
     margin: 32px auto;
     position: relative;
-    
-    #problem-bubble-wrapper {
-        position: relative;
-        margin-bottom: -150px;
-            
-        #problem-bubble {
-            display: block;
-            -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-            //z-index: -1;
-        }
 
-        #problem-bubble-text {
-            position: absolute;
-            top: 5%;
-            left: 5%;
+    #problem-wrapper {
+        max-width: 48rem;
+        #problem-bubble-wrapper {
+            position: relative;
+            margin-bottom: -150px;
             
-            text-align: left;
-            z-index: 1;
+            #problem-bubble {
+                display: block;
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+                //z-index: -1;
+            }
+
+            #problem-bubble-text {
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                
+                text-align: left;
+                z-index: 1;
+            }
         }
-    }
-    #problem-footer {
-        position: relative;
+        #problem-footer {
+            position: relative;
+        }
     }
 
     #solution-wrapper {
+        max-width: 48rem;
+        margin-left: auto;
+        margin-right: 0;
+        
         #solution-bubble-wrapper {
             position: relative;
             margin-bottom: -170px;
