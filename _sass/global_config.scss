@@ -22,7 +22,6 @@
 // config below is specific to Ubuntu to make it thicker (like the Medium setting of the non-variable font)
 html {
     font-family: "Ubuntu-medium", v.$font-fallback-stack;
-    font-size: var(--font-size);
     font-weight: 470;
 }
 :where(
@@ -39,6 +38,7 @@ body {
     color: var(--color-primary-text);
     background-color: var(--color-primary-background);
     line-height: var(--line-spacing);
+    font-size: var(--font-size);
     margin: 0;
 
     display: flex;
