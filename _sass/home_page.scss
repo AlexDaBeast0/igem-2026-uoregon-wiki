@@ -4,6 +4,14 @@
 @use 'footer';
 @use 'global_config';
 
+// page-only colors:
+:root {
+    --color-wave-foam: #96ac9e;
+    --color-wave-main: var(--color-accent-primary);
+    --color-text-light: #fff7e8;
+    
+}
+
 @font-face {
     font-family: "DarumadropOne";
     src:
@@ -12,21 +20,125 @@
     font-display: swap;
 }
 
-body {
+#hero {
+    position: relative;
+    margin: 0;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+    
+    .hero-content {
+        position: absolute;
+
+        padding: 0 2%;
+        bottom: 40%;
+
+        color: var(--color-text-light);
+        h1 {
+            font-weight: 600;
+            font-size: calc(32pt + 1vw);
+            margin: 0;
+        }
+        h2 {
+            font-weight: 400;
+            font-size: calc(30pt + 0.5vw);
+            margin: 0;
+            margin-top: 10px;
+        }
+    }
+    
+    .hero-wave {
+        position: absolute;
+
+        left: 0;
+        bottom: -2px; // this is a bodge.
+        width: 100%;
+        
+        z-index: 2;
+        display: block;
+
+        .hero-wave-foam {
+            fill: var(--color-wave-foam);
+        }
+
+        .hero-wave-main {
+            fill: var(--color-wave-main);
+        }
+    }
+    
+}
+
+.below-hero {
+
     background: linear-gradient(
         to bottom,
-        #90a4d4 0%,
+        var(--color-wave-main) 0%,
         var(--color-primary-background) 50rem
     );
+
+    .blurb {
+        max-width: 60rem;
+        margin: 0 auto;
+
+        padding: 20px;
+
+        color: var(--color-text-light);
+        font-size: var(--font-size-large);
+        font-weight: 600;
+
+        a, a:visited {
+            //color: var(--color-text-light);
+            color: var(--color-highlight-secondary);
+            /* 
+               background: linear-gradient(
+               to top,
+               var(--color-highlight-primary) 0%,
+               //color-mix(in srgb, var(--color-highlight-secondary) 60%, transparent) 0%,
+               transparent 50%
+               ); */
+        }
+    }
+
+    .action-buttons {
+        max-width: 60rem;
+        margin: 30px auto;
+        margin-bottom: 60px;
+            
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+        
+        a {
+            padding: 10px;
+            width: 100%;
+            
+            border: 1px solid var(--color-text-light);
+            border-radius: v.$border-rounding;
+
+            text-align: center;
+            color: var(--color-text-light);
+            font-weight: 600;
+            font-size: var(--font-size-large);
+            text-decoration: none;
+        }
+    }
+
+    #comic-header {
+        max-width: 60rem;
+        margin: 0 auto;
+        text-align: center;
+        font-size: var(--font-size-large);
+
+        scroll-margin-top: 15vh; // so it doesn't get covered by navbar when linking to it. see https://dev.to/yuridevat/how-to-not-cut-off-the-top-of-your-section-when-using-anchor-tags-22ig
+        img {
+            width: 100%;
+        }
+    }
 }
 
-main {
-    padding: 0 10%;
-}
-
-img {
-    width: 100%;
-}
 
 .logo-container {
     max-width: 60rem;
@@ -38,6 +150,35 @@ img {
 
     .side-duck {
         width: 12rem;
+    }
+}
+
+
+
+.story {
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+
+.story-blocks {
+    img {
+        width: 100%;
+    }
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    gap: 32px;
+
+    .story-spacer {
+        font-size: 32px;        
+    }
+    
+    .story-imgblock {
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -100,32 +241,6 @@ img {
         }
     }
 }
-
-
-.story {
-    max-width: 48rem;
-    margin: 32px auto;
-}
-
-
-.story-blocks {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-
-    gap: 32px;
-
-    .story-spacer {
-        font-size: 32px;        
-    }
-    
-    .story-imgblock {
-        img {
-            width: 100%;
-        }
-    }
-}
-
 
 .artfont-lg {
     font-family: "DarumadropOne", sans-serif;

@@ -3,156 +3,203 @@ layout: home_page
 permalink: /
 ---
 
-<div class="logo-container">
-  <div class="side-duck">
-    <img alt="duck in a lab coat holding a micropipette" src="https://static.igem.wiki/teams/6041/wiki/pages/home/top-part/banner-duck-left-10-28.avif"/>
-  </div>
-  <div class="logo-and-slogan">
-    <div class="logo">
-      <img alt="banner with team logo saying 'AquaFlock'" src="https://static.igem.wiki/teams/6041/wiki/pages/home/top-part/combined-banner-10-28.avif"/>
-    </div>
-    <div class="artfont-lg">
-      recapturing nitrate pollution!
-    </div>
-  </div>
-  <div class="side-duck">
-    <img alt="duck in a lab coat holding a micropipette" src="https://static.igem.wiki/teams/6041/wiki/pages/home/top-part/banner-duck-right.avif"/>
-  </div>
-</div>
-
-<div class="dialog-container">
-  <div id="problem-wrapper">
-    <div id="problem-bubble-wrapper">
-      <div id="problem-bubble-text" class="artfont-med">
-        Nitrogen fertilizers are essential to modern agriculture. They are also a major environmental contaminant.
-      </div>
-      <img id="problem-bubble"
-           alt="speech bubble"
-           src="https://static.igem.wiki/teams/6041/wiki/pages/home/top-part/speech-bubble-med.avif"/>
-    </div>
-
-    <img id="problem-footer"
-         alt="drawing of farmer duck with a bag near a pond"
-         src="https://static.igem.wiki/teams/6041/wiki/pages/home/top-part/speech-bubble-footer-farmer.avif"/>
+<section id="hero">
+  <img
+      alt="photo of the Metolius river, Oregon"
+      src="https://static.igem.wiki/teams/6041/wiki/pages/home/1-header/metolius-narrowcropped.avif"
+  />
+  
+  <div class="hero-content">
+    <h1>Preserve your ecosystem.</h1>
+    <h2>Recapture nitrogen pollution.</h2>
   </div>
 
-  <div id="solution-wrapper">
-    <div id="solution-bubble-wrapper">
-      <div id="solution-bubble-text" class="artfont-med">
-        We are making engineered bacteria to take nitrogen out of water and put it back into farmland
-      </div>
-      <img id="solution-bubble"
-           alt="speech bubble"
-           src="https://static.igem.wiki/teams/6041/wiki/pages/home/top-part/speech-bubble-med.avif"/>
-    </div>
+  <svg
+      class="hero-wave"
+      viewBox="0 0 1920 191.66667"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+  >
+    <path
+        class="hero-wave-foam"
+        d="M 571.32812,668.63281 C 506.875,671.5625 460,695 460,695 c 0,0 -140,40 -240,0 C 120,655 0,695 0,695 v 96 h 1920 v -96 c 0,0 -160,40 -220,0 -60,-40 -180,-20 -220,0 -40,20 -220,40 -300,0 -80,-40 -200,0 -200,0 0,0 -160,60 -280,0 -45,-22.5 -90,-28.125 -128.67188,-26.36719 z"
+        transform="translate(0,-668.33333)"
+    />
+    <path
+        class="hero-wave-main"
+        d="M 1593.9902,690.29687 C 1549.038,690.63251 1523.7171,712.09431 1500,720 c -60,20 -60,40 -260,0 -150,-30 -260,0 -260,0 0,0 -180,40 -280,0 -100,-40 -160,-20 -240,0 -80,20 -100,60 -220,0 C 120,660 0,720 0,720 V 860 H 1920 V 720 c 0,0 -100,60 -220,0 -45,-22.5 -79.0384,-29.9045 -106.0098,-29.70313 z"
+        transform="translate(0,-668.33333)"
+    />
+  </svg>
+</section>
 
-    <img id="solution-footer"
-         alt="drawing of scientist duck with lab equipment"
-         src="https://static.igem.wiki/teams/6041/wiki/pages/home/top-part/speech-bubble-footer-solution.avif"/>
+<section class="below-hero">
+
+  <div class="blurb">
+    Today's agriculture relies on nitrogen fertilizer. Excess fertilized leaches into surface and ground water, harming the ecosystem and humans. We are <a href="/uoregon/engineering">engineering <i>E. coli</i></a> to <a href="/uoregon/chassis">sequester nitrate</a> from water, <a href="/uoregon/nitrogen-storage">store it as cyanophycin</a> to be <a href="/uoregon/flocculation">collected and reused</a> as fertilizer.
   </div>
-</div>
-<!-- <h1>Aquaflock: Recapturing nitrate pollution</h1>
-     <h2>Nitrogen fertilizers are essential to modern agriculture. They are also a major environmental contaminant.</h2>
-     [an illustration?]
-     <h2>We are making engineered bacteria to take nitrogen out of water and put it back into farmland</h2>
-     <a href="/uoregon/description">Explore our project</a>
-     <br/>
-     <a href="#comic">Read our story ↓</a> -->
 
-
-
-<div class="story" id="comic">
-  <div class="story-blocks">
-    <div class="story-spacer">
-      ~~~ Here goes a story of two ducks ~~~
-    </div>
-    {% include placeholder-image.html aspect-ratio='23 / 15' text="Zadie's image 1: castle" %}
-    {% include placeholder-image.html aspect-ratio='23 / 15' text="Zadie's image 2: duck with paper" %}
-    {% include placeholder-image.html aspect-ratio='23 / 15' text="Zadie's image 3: we have to save the kindgom" %}
-    {% include placeholder-image.html aspect-ratio='23 / 15' text="Zadie's image 4: we have to save the kindom 2" %}
-
-    <div class="story-spacer">
-      ~~~ In the present day ~~~
-    </div>
-
-
-    <div class="story-imgblock">
-      <div class="story-imgblock-text" id="comic-hain1-farmer-fertilizing">
-        The modern farmer applies nitrogen-based fertilizer to their fields in hopes of a strong crop yield.
-      </div>
-      <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/comic/hain/comic-hain1-farmer-fertilizing.avif"/>
-    </div>
-
-    <div class="story-imgblock">
-      <div class="story-imgblock-text" id="comic-hain2-wastestreams">
-        The issue is that between 10-80% of applied nitrogen can be **washed away** in agricultural runoff, making its way into
-        <a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1890/1051-0761(1998)008%5B0559:NPOSWW%5D2.0.CO;2">subsurface drainage</a>
-        (9-18 ppm NO3- compared to the threshold 10 ppm) and
-        <a href="https://www.sciencedirect.com/science/article/pii/S2589914725001094?via%3Dihub">privately owned wells</a>
-        (_____ ppm). One in every five private wells has nitrate levels above the threshold.
-      </div>
-      <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/comic/hain/comic-hain2-wastestreams.avif"/>
-    </div>
-
-    <div class="story-imgblock">
-      <div class="story-imgblock-text" id="comic-hain3-eutrophication">
-        Excess nitrate results in <strong>environmental concerns</strong>, such as algal blooms resulting from eutrophication (excess nitrogen in water) ←this sentence goes where ‘text’ is on the drawing below
-      </div>
-      <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/comic/hain/comic-hain3-eutrophication.avif"/>
-    </div>
-
-    <div class="story-imgblock">
-      <div class="story-imgblock-text" id="comic-hain4-bluebaby">
-        and <strong>health concerns</strong> such as blue baby syndrome resulting from ____
-      </div>
-      <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/comic/hain/comic-hain4-bluebaby.avif"/>
-    </div>
-
-    <div class="story-imgblock">
-      <div class="story-imgblock-text" id="comic-hain5-sicentist-wonders">
-        The modern day scientist wonders... <br/>
-        ‘What if we could engineer bacteria to recapture nitrogen pollution in agricultural wastewater?’
-      </div>
-      <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/comic/hain/comic-hain5-sicentist-wonders.avif"/>
-    </div>
-
-    <div class="story-imgblock">
-      <div class="story-imgblock-text" id="comic-hain6-uptake">
-        In response, the University of Oregon iGEM team is engineering E. coli bacteria to <br/>
-        1. <strong>Uptake</strong> high levels of nitrogen in agricultural runoff ← this text goes where ‘text’ is on the drawing below
-      </div>
-      <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/comic/hain/comic-hain6-uptake.avif"/>
-    </div>
-
-    <div class="story-imgblock">
-      <div class="story-imgblock-text" id="comic-hain7-storage">
-        2. Store it inside the cell as the nitrogen-rich molecule, cyanophycin.
-      </div>
-      <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/comic/hain/comic-hain7-storage.avif"/>
-    </div>
-
-    <div class="story-imgblock">
-      <div class="story-imgblock-text" id="comic-hain8-flocculation">
-        and 3. Flocculate in the presence of high levels of cyanophycin in order to be collected and recycled into nitrogen-rich fertilizer.
-      </div>
-      <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/comic/hain/comic-hain8-flocculation.avif"/>
-    </div>
-
-    <div class="story-imgblock">
-      <div class="story-imgblock-text" id="comic-hain9-implementation">
-        Our bacteria would then be implemented in filter systems at our two target wastewater streams.
-      </div>
-      <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/comic/hain/comic-hain9-implementation.avif"/>
-    </div>
-
-
-
-    
+  <div class="action-buttons">
+    <a href="/uoregon/description">Explore our project</a>
+    <a href="#comic-header">Read our comic</a>
   </div>
-</div>
+
+  <div id="comic-header">
+    <img alt="comic header" src="https://static.igem.wiki/teams/6041/wiki/pages/home/comic/comic-banner.avif"/>
+  </div>
+
+  <div class="story">
+    <div class="story-blocks">
+      <div class="story-spacer">
+  
+      </div>
+      <div class="story-imgblock">
+        <div class="story-imgblock-text" id="comic-zadie1-castle-letter">
+          The Duck Kingdom is facing desolation! Their wells are poisoned and they can’t grow any food! The king has ordered his best alchemists on the case.
+        </div>
+        <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/2-comic/zadie/comic-zadie1-castle-letter.avif"/
+      </div>
+
+      <div class="story-imgblock">
+        <div class="story-imgblock-text" id="comic-zadie1-castle-letter">
+          Letter (background): The nitrates in the fertilizer we use are leaching into our lakes and rivers, causing eutrophication and overgrowth of harmful algae. It is poisoning our wells, causing dangerous health effects! We must find a solution so we can still fertilize our crops without poisoning the kingdom. Alchemist Duck, it is your job to find a way to solve this problem.
+        </div>
+        <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/2-comic/zadie/comic-zadie2-scroll.avif"/
+      </div>
+
+      
+
+      {% include placeholder-image.html aspect-ratio='23 / 15' text="Zadie's image 3: Alchemist Duck works tirelessly, testing methods to uptake and metabolize the harmful nitrates into" %}
+      {% include placeholder-image.html aspect-ratio='23 / 15' text="Zadie's image 4: we have to save the kindom 2" %}
+
+      <div class="story-spacer">
+        ~~~ In the present day ~~~
+      </div>
+     
+
+      <div class="story-imgblock">
+        <div class="story-imgblock-text" id="comic-hain1-farmer-fertilizing">
+          The modern farmer applies nitrogen-based fertilizer to their fields in hopes of a strong crop yield.
+        </div>
+        <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/2-comic/hain/comic-hain1-farmer-fertilizing.avif"/>
+      </div>
+
+      <div class="story-imgblock">
+        <div class="story-imgblock-text" id="comic-hain2-wastestreams">
+          The issue is that between 10-80% of applied nitrogen can be **washed away** in agricultural runoff, making its way into
+          <a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1890/1051-0761(1998)008%5B0559:NPOSWW%5D2.0.CO;2">subsurface drainage</a>
+          (9-18 ppm NO3- compared to the threshold 10 ppm) and
+          <a href="https://www.sciencedirect.com/science/article/pii/S2589914725001094?via%3Dihub">privately owned wells</a>
+          (_____ ppm). One in every five private wells has nitrate levels above the threshold.
+        </div>
+        <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/2-comic/hain/comic-hain2-wastestreams.avif"/>
+      </div>
+
+      <div class="story-imgblock">
+        <div class="story-imgblock-text" id="comic-hain3-eutrophication">
+          Excess nitrate results in <strong>environmental concerns</strong>, such as algal blooms resulting from eutrophication (excess nitrogen in water) ←this sentence goes where ‘text’ is on the drawing below
+        </div>
+        <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/2-comic/hain/comic-hain3-eutrophication.avif"/>
+      </div>
+
+      <div class="story-imgblock">
+        <div class="story-imgblock-text" id="comic-hain4-bluebaby">
+          and <strong>health concerns</strong> such as blue baby syndrome resulting from ____
+        </div>
+        <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/2-comic/hain/comic-hain4-bluebaby.avif"/
+      </div>
+
+      <div class="story-imgblock">
+        <div class="story-imgblock-text" id="comic-hain5-sicentist-wonders">
+          The modern day scientist wonders... <br/>
+          ‘What if we could engineer bacteria to recapture nitrogen pollution in agricultural wastewater?’
+        </div>
+        <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/2-comic/hain/comic-hain5-scientist-wonders.avif"/>
+      </div>
+
+      <div class="story-imgblock">
+        <div class="story-imgblock-text" id="comic-hain6-uptake">
+          In response, the University of Oregon iGEM team is engineering E. coli bacteria to <br/>
+          1. <strong>Uptake</strong> high levels of nitrogen in agricultural runoff ← this text goes where ‘text’ is on the drawing below
+        </div>
+        <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/2-comic/hain/comic-hain6-uptake.avif"/>
+      </div>
+
+      <div class="story-imgblock">
+        <div class="story-imgblock-text" id="comic-hain7-storage">
+          2. Store it inside the cell as the nitrogen-rich molecule, cyanophycin.
+        </div>
+        <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/2-comic/hain/comic-hain7-storage.avif"/>
+      </div>
+
+      <div class="story-imgblock">
+        <div class="story-imgblock-text" id="comic-hain8-flocculation">
+          and 3. Flocculate in the presence of high levels of cyanophycin in order to be collected and recycled into nitrogen-rich fertilizer.
+        </div>
+        <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/2-comic/hain/comic-hain8-flocculation.avif"/>
+      </div>
+
+      <div class="story-imgblock">
+        <div class="story-imgblock-text" id="comic-hain9-implementation">
+          Our bacteria would then be implemented in filter systems at our two target wastewater streams.
+        </div>
+        <img alt="" src="https://static.igem.wiki/teams/6041/wiki/pages/home/2-comic/hain/comic-hain9-implementation.avif"/>
+      </div>
+    </div>
+  </div>
+
+</section>
 
 
 <!-- <h1>Recapturing Nitrate Pollution</h1>
 
      <p>Modern agriculture is characterized by heavy use of nitrogen fertilizer, creating a major source of nitrogen pollution. Almost half of the fertilizer is not absorbed by plants, instead leaching into surface and ground water. Excess nitrogen has large-scale, catastrophic impacts on both the natural environment and human communities. We propose a bacteria-based solution to recapture nitrogen from water. Engineered bacteria uptake environmental nitrogen as nitrate, which triggers expression of recombinant cyanophycin synthetase. The enzyme assembles nitrogen-rich amino acids into the storage biopolymer cyanophycin. Once cyanophycin has accumulated, a second genetic circuit is triggered to cause bacterial flocculation, allowing collection of the nitrogen-rich culture. The collected cells may then be sterilized and used as fertilizer. Implemented in nitrogen-polluted water streams, our system provides an element of circularization to the agricultural fertilizer industry while simultaneously addressing a significant source of pollution.</p> -->
 
+<!-- <div class="logo-container">
+     <div class="side-duck">
+     <img alt="duck in a lab coat holding a micropipette" src="https://static.igem.wiki/teams/6041/wiki/pages/home/1-header/banner-duck-left-cropped.avif"/>
+     </div>
+     <div class="logo-and-slogan">
+     <div class="logo">
+     <img alt="banner with team logo saying 'AquaFlock'" src="https://static.igem.wiki/teams/6041/wiki/pages/home/1-header/banner-combined-green.avif"/>
+     </div>
+     <div class="artfont-lg">
+     recapturing nitrate pollution!
+     </div>
+     </div>
+     <div class="side-duck">
+     <img alt="duck in a lab coat holding a micropipette" src="https://static.igem.wiki/teams/6041/wiki/pages/home/1-header/banner-duck-right.avif"/>
+     </div>
+     </div>
+
+     <div class="dialog-container">
+     <div id="problem-wrapper">
+     <div id="problem-bubble-wrapper">
+     <div id="problem-bubble-text" class="artfont-med">
+     Nitrogen fertilizers are essential to modern agriculture. They are also a major environmental contaminant.
+     </div>
+     <img id="problem-bubble"
+     alt="speech bubble"
+     src="https://static.igem.wiki/teams/6041/wiki/pages/home/top-part/speech-bubble-med.avif"/>
+     </div>
+
+     <img id="problem-footer"
+     alt="drawing of farmer duck with a bag near a pond"
+     src="https://static.igem.wiki/teams/6041/wiki/pages/home/top-part/speech-bubble-footer-farmer.avif"/>
+     </div>
+
+     <div id="solution-wrapper">
+     <div id="solution-bubble-wrapper">
+     <div id="solution-bubble-text" class="artfont-med">
+     We are making engineered bacteria to take nitrogen out of water and put it back into farmland
+     </div>
+     <img id="solution-bubble"
+     alt="speech bubble"
+     src="https://static.igem.wiki/teams/6041/wiki/pages/home/top-part/speech-bubble-med.avif"/>
+     </div>
+
+     <img id="solution-footer"
+     alt="drawing of scientist duck with lab equipment"
+     src="https://static.igem.wiki/teams/6041/wiki/pages/home/top-part/speech-bubble-footer-solution.avif"/>
+     </div>
+     </div> -->
