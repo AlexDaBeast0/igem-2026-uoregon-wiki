@@ -3,6 +3,7 @@
 
 .hpmap {
     position: relative;
+    container-type: inline-size;
     top: 0;
     left: 0;
     
@@ -12,30 +13,24 @@
         left: 0;
 
         width: 100%;
+        height: auto;
         
     }
     .map-clickables {
-
-        .map-clickable {
-            overflow: visible;
-            pointer-events: none;
-        }
-
-        .svg-link {
-            pointer-events: visiblePainted;
-            cursor: pointer;
-        }
-        .svg-link:hover {
+        position: absolute;
+        inset: 0;
+        
+        .map-clickable:hover {
             filter:
-                drop-shadow(0 0 3px red)
-                drop-shadow(0 0 3px red);
+                drop-shadow(0 0 3px green)
+                drop-shadow(0 0 3px green);
         }
         
         #hpm-wastewater {
             position: absolute;
-            top: 50px;
+            top: 6.25cqw; // 50px;
             left: 0px;
-            width: 300px;
+            width: 37.5cqw; // 300px;
         }
         #hpm-lillis {
             position: absolute;
