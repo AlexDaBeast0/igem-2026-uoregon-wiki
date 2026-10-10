@@ -27,12 +27,9 @@ pages:
           - title: Protocols
             url: /protocols
             hint: Protocols used in the lab
-            
+
       - title: Dry lab
         children:
-          - title: Metabolic Model
-            url: /model
-            hint: Modeling nitrogen flux
           - title: Split cyanophycin biosensor
             url: /split-biosensor
             hint: Detecting cyanophycin to trigger flocculation
