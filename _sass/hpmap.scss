@@ -1,0 +1,78 @@
+
+@use 'variables' as v;
+
+.hpmap {
+    position: relative;
+    top: 0;
+    left: 0;
+    
+    .map-background img {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        
+    }
+    .map-clickables {
+
+        .map-clickable {
+            overflow: visible;
+            pointer-events: none;
+        }
+
+        .svg-link {
+            pointer-events: visiblePainted;
+            cursor: pointer;
+        }
+        .svg-link:hover {
+            filter:
+                drop-shadow(0 0 3px red)
+                drop-shadow(0 0 3px red);
+        }
+        
+        #hpm-wastewater {
+            position: absolute;
+            top: 50px;
+            left: 0px;
+            width: 300px;
+        }
+        #hpm-lillis {
+            position: absolute;
+            top: 0px;
+            left: 310px;
+            width: 250px;
+        }
+        #hpm-knightcampus {
+            position: absolute;
+            top: 10px;
+            left: 500px;
+            width: 260px;
+        }        
+        #hpm-orchard {
+            position: absolute;
+            top: 135px;
+            left: 0px;
+            width: 550px;
+        }
+        #hpm-tractor {
+            position: absolute;
+            top: 420px;
+            left: 400px;
+            width: 380px;
+        }
+        #hpm-oregon-state {
+            position: absolute;
+            top: 615px;
+            left: 0px;
+            width: 390px;
+        }
+        #hpm-ohsu {
+            position: absolute;
+            top: 950px;
+            left: 325px;
+            width: 450px;
+        }
+
+    }
+}
