@@ -7,7 +7,6 @@ subtitle: Evaluating and optimizing our bacterial chassis.
 banner: https://static.igem.wiki/teams/6041/wiki/placeholders/petunias.avif
 ---
 
-
 Two key factors of our chassis that we focused on optimizing were ability to take up nitrate and survive in the low temperatures required for implementation. For uptake, we decided to utilize the the NAR gene protein family for nitrogen import and reduction s as they already have a decent efficiency, and we wanted to avoid any unnecessary metabolic strain  {% cite cleggRolesPolytopicMembrane2002c --file chassis %} . As for the temperature requirement, we utilized directed evolution of our starting T7 BL21(DE3) *Escherichia coli* to lower its ideal growth temperature {% cite miyazakiDirectedEvolutionStudy2000 --file chassis %}.
 
 # Uptake
