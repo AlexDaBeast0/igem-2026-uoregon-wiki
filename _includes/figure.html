@@ -1,4 +1,4 @@
 <figure id="{{ include.label }}" class="image">
   <img alt="{{ include.alttext }}" src="{{ include.url }}"/>
-  <figcaption>{{ include.caption }}</figcaption>
+  <figcaption>{{ include.caption | markdownify }}</figcaption>
 </figure>
