@@ -50,7 +50,7 @@ pages:
     children:
       - title: Education
         children:
-          - title: Pedagogy and Philosophy
+          - title: Education
             url: /education
             hint: Pedagogical approaches
           - title: Events
