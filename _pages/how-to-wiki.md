@@ -137,29 +137,3 @@ To add the bibliography, the include is below. Put it at the end of the page.
 
 Here's how to do it:
 
-```
-{% raw %}
-{% include box.html
-  heading="A large heading"
-  text="You can put text in callout boxes to draw attention to it"
-  heading-size="large"
-%}
-
-{% include box.html
-  heading="A heading"
-  text="You have a choice of large (# or h1) or small (### or h3) heading"
-%}
-
-{% include box.html
-  text="Or no heading at all"
-%}
-
-{% include collapsible-box.html
-    header="You can also make collapsible boxes; those must have a heading"
-    text="This text can be hidden if you click on the minus icon. You can also make it hidden by default"
-    open-by-default="true"
-%}
-{% endraw %}
-```
-
-

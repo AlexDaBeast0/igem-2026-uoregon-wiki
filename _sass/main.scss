@@ -133,3 +133,62 @@ main {
 .collapsible-box[open] summary::marker {
     content: "− ";
 }
+
+.carousel-container {
+    position: relative;
+    //padding: 0 20px;
+    
+    .carousel-list {
+        display: flex;
+        gap: 8px;
+        padding: 0;
+
+        list-style: none;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+
+        li {
+            flex-shrink: 0;
+            width: 100%;
+
+            scroll-snap-align: center;
+
+            img {
+                width: 100%;
+                border-radius: v.$border-rounding;
+            }
+        }
+    }
+
+    .button {
+        position: absolute;
+        top: 45%;
+
+        border-radius: v.$border-rounding;
+        border: none;
+        
+        background-color: var(--color-primary-background);
+        opacity: 80%;
+
+        width: 3rem;
+        height: 3rem;
+
+        display: grid;
+        place-items: center;
+
+        .button-arrow {
+            font-weight: 800;
+            font-size: 20pt;
+            line-height: 1;
+        }
+    }
+
+    .button--previous {
+        left: 1.5rem;
+    }
+    .button--next {
+        right: 1.5rem;
+    }
+}
+
+
