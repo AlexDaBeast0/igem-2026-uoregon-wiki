@@ -7,67 +7,41 @@ subtitle: This is the flocculation module page.
 banner: https://static.igem.wiki/teams/6041/wiki/placeholders/petunias.avif
 ---
 
-# Background
+Once nitrogen pollutants are stored intracellularly as biological polymer cyanophycin, the biomass must be collected from the system. To this end, our team reviewed the literature for a biological strategy which would allow for selective harvest of cyanophycin-rich cells. Existing methods for water filtration include anion exchange, carbon, ultrafiltration, and electrochemical filters, which suffer from inefficiency and maintenance difficulties{% cite guthModernWaterTreatment2025 --file flocculation %}.
 
-To collect stored nitrogen, we needed a method that would both be responsive to accumulated cyanophycin and practical to implement. To this end, our team reviewed the literature for a biological strategy which would allow for rapid harvest of cyanophycin-rich bacteria. We identified the ability of *E. coli* to flocculate as a promising strategy. “Flocs” are proteinaceous aggregates of bacteria associated with production of outer membrane vesicles, as investigated by Ojima et. al, 2016 {% cite ojimaFlocculationEscherichiaColi2015a --file flocculation %}. Flocculations are observed to be several millimeters in size, and are visible as thin, scrap-like formations. As such, they are large enough to be filtered from solution using mechanical methods, rather than the intensive and constantly chemical extractions which may be employed on free nitrates in wastewater, such as anion exchange filters, or harvesting individual cyanophycin-rich cells using micron-scale pores. Instead, we envisioned the ability to easily separate large cellular aggregates from our target water source.
+To resolve this issue, the ability of *E. coli* to flocculate was identified as a promising strategy for removing engineered bacteria from water sources. “Flocs” are proteinaceous aggregates of bacteria associated with production of outer membrane vesicles, as investigated by Ojima et. al, 2016 {% cite ojimaFlocculationEscherichiaColi2015a --file flocculation %}. Flocculations can reach several millimeters in size, and are visible as thin, scrap-like formations. The study by Ojima et. al found that the flocculation and enhanced OMV production phenotype correlated with overexpression of the native gene bcsB component of the bacterial cellulose synthase complex. Though the specific relationship between BcsB overexpression and flocculation phenotype is yet unclear, this was used as a starting point for collection of the engineered host strain {% cite ojimaFlocculationEscherichiaColi2015a --file flocculation %}. Currently, this work aims to demonstrate inducible aggregation of engineered cells, with the long-term goal of selective harvesting of cyanophycin-rich biomass by porous filtration.
 
-The study by Ojima et. al found that the native E. coli gene bcsB is primarily responsible for flocculation, as the phenomenon can be replicated in culture simply by inducing the recombinant gene’s overexpression in multiple common laboratory E. coli strains, including B strains. To employ flocculation in our system, we needed to not only ensure the overexpression of bcsB, but set it to do so only at the point when our engineered strains had captured and stored a sufficient amount of nitrate.
+## Design Cycle 1
 
-# Design Cycle 1
-
-To test expression of the bcsB monomeric protein, we placed the gene (Uniprot P37652) under control of a T7 promoter system and cloned into the well-characterized pET-21(+) vector with a supplemented RBS using Golden Gate assembly, as well as an N-terminal his-tag for downstream purification.
-
-[plasmid picture/RBS prediction]
-
-
-{% include figure.html
-    url="URL,_IN_QUOTES"
-    caption="CAPTION_GOES_HERE"
-    alttext="DESCRIPTION_FOR_PEOPLE_WHO_USE_SCREEN_READERS"
-    label="LABEL"
-%}
-
-
-BL21(DE3) cells were then transformed with the cloned plasmid and cultured. Cells were lysed and IMAC was used to purify the his-tagged protein. SDS PAGE verified the presence of bcsB, with a band at approximately 86 kDa.
+First, inducible flocculation of the host strain was demonstrated. To this end, the bcsB gene sequence (Uniprot P37652) was placed into vector pET-28(+) (Twist Bioscience) to produce test plasmid pET-28(+)-bcsB, which includes an N-terminal histidine tag for IMAC protein production. The test plasmid was cloned into host strain E. coli BL21(DE3). Separately, BL21(DE3) was transformed with pJUMP29-1A to produce a control strain for use in overexpression and flocculation experiments. Strains were cultured with 1 mM IPTG for 24 hr. SDS-PAGE was used to qualitatively measure BcsB expression. Methods and materials can be found in Protocols.
 
 [picture of gel].
 
-
-{% include figure.html
-    url="URL,_IN_QUOTES"
-    caption="CAPTION_GOES_HERE"
-    alttext="DESCRIPTION_FOR_PEOPLE_WHO_USE_SCREEN_READERS"
-    label="LABEL"
-%}
-
-
-To test flocculation, the bcsB gene block was ordered without the N-terminal his tag, as flocculation relies on formation of a hexameric complex. The gene block was again cloned into the pET-21(+) plasmid, then transformed BL21(DE3). Cells were cultured for 24 hours at 37 C to produce flocculations as previously described by Ojima et. al.. Flocculations were imaged via light microscopy.
-
-[insert flocculation data/images]
+After demonstrating overexpression in the host strain, the histidine tag was removed from bcsB to minimize the possibility of interfering with protein function. The gene sequence was supplemented with an iGEM ribosome binding site (RBS) BBa_J426032 and the translation rate was predicted (Salis Lab RBS calculator) at 59,140. The sequence was inserted into pET-21a(+) (Twist Bioscience) to produce pET-21a(+)-bcsB and cloned into *E. coli* BL21 (DE3). Recombinant strain and control BL21(DE3) strains were cultured with 1mM IPTG. After 24 hr, solutions were removed and left to stand for 15 minutes at room temperature. Precipitates were resuspended in 0.9% NaCl solution and flocculations were imaged via light microscopy as described {% cite ojimaFlocculationEscherichiaColi2015a --file flocculation %}.
 
 
 {% include figure.html
-    url="URL,_IN_QUOTES"
-    caption="CAPTION_GOES_HERE"
-    alttext="DESCRIPTION_FOR_PEOPLE_WHO_USE_SCREEN_READERS"
-    label="LABEL"
+    url="https://static.igem.wiki/teams/6041/wiki/flocculation/flocculation-salisbcsb.avif"
+    caption="Salis lab RBS calculator prediction for bcsB translation rates under BBa_J426032. Relative translation rate is predicted as 59,140 at the start codon, nucleotide position 30. "
+    alttext="Salis lab RBS calculator prediction for bcsB translation rates under BBa_J426032. Relative translation rate is predicted as 59,140 at the start codon, nucleotide position 30."
+    label="RBS Translation Rate Prediction"
 %}
 
 
-Although flocculation has been shown to be inducible under ideal conditions, with a provided carbon source at 37 C. However, wastewater and agricultural runoff is typically around 4 C, poor in carbon and oxygen. Though E. coli may survive and grow under these conditions, metabolism switches to favor a more conservative anaerobic regime and slower growth. As such, our team performed directed evolution to obtain a strain that could efficiently assimilate nitrogen, reproduce, and form flocs in the target environment. *directed evolution when those results come in. Ideally there will be pictures of plates.
+https://static.igem.wiki/teams/6041/wiki/flocculation/flocculation-salisbcsb.avif
 
-# Design Cycle 2
+[picture of flocculations]
 
-[add revisions when ready–hopefully with a directed evolution e coli strain]
+## Design Cycle 2
 
-# Conclusions
+Flocculation has been shown to be inducible under ideal conditions, with a provided carbon source at 37 C. However, wastewater and agricultural runoff is typically around 10 C, poor in carbon and oxygen. Though E. coli may survive and grow under these conditions, metabolism switches to favor a more conservative anaerobic regime and slower growth {% cite vanheeswijkNitrogenAssimilationEscherichia2013a --file flocculation %}, posing an issue to real-world translation of our system. As such, our team performed directed evolution to obtain a Bl21(DE3) strain that could host our system in the target environment. Directed evolution resulted in a strain that successfully cultured at 33 C. The flocculation experiment above was repeated in this strain.
 
-The bcsB gene can be cloned and successfully produce flocculations in the target bacterial strain. However, as a last major design consideration, we had to consider how flocculation by overexpression of the bcsB gene could be responsive to cyanophycin, so that cells could be harvested only after accumulating nitrogen. There are no known binders of cyanophycin which could be utilized as a transcription factor upstream of the recombinant bcsB. As such, our team elected to computationally design a suite of split transcription factors. These were designed to bind to lysine and arginine side chains in close proximity, as present in the cyanophycin polymer. Upon binding, the transcription factor is activated and triggers bcsB transcription. More information can be found on the computational page.
+[add results when ready]
 
-Should future teams seek to employ flocculation in their own systems, the bcsB part engineered and leveraged by our team can be found here [link to part database].
+## Results and Future Directions
 
-# Bibliography
+Here, overexpression of BcsB is shown to induce a flocculation phenotype in the host strain. It is our hope that future iGEM teams will benefit from the genetic machinery for a flocculation phenotype and inducible aggregation of E. coli.  Future research aims to design a mechanism by which flocculation is dependent on the presence of cyanophycin for selective harvesting of the engineered strain. However, there are no native pathways by which cyanophycin can regulate BcsB expression. As selective transcription is of great interest, split transcription factor systems have previously been explored that utilize novel binding domains for factor recruitment and activation dependent on the presence of metabolites or environmental triggers. To induce BcsB expression dependent on the presence of cyanophycin via a split transcription factor mechanism, binding domains of cyanophycin must be identified. As such, a suite of protein fragment scaffolds were designed *de novo* against cyanophycin to generate binding domains. This was done computationally, and methods and results of the project can be found [here](/uoregon/split-biosensor). Binding affinity and specificity of these domains for cyanophycin will be evaluated in wet lab next, followed by incorporation of the split transcription factor system to BcsB expression.
+
+## Bibliography
 
 {% bibliography --file flocculation --cited_in_order %}
-
-
