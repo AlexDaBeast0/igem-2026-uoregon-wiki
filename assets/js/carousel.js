@@ -1,14 +1,9 @@
-const list = document.querySelector(".carousel-list");
+// based on https://www.nieknijland.nl/blog/make-a-responsive-carousel-with-just-css
+function handleClick(direction, button) {
+    const carousel = button.closest(".carousel-container");
+    const list = carousel.querySelector(".carousel-list");
+    const itemWidth = list.querySelector("li").offsetWidth;
 
-// We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
-const item = document.querySelector(".carousel-list li");
-const itemWidth = item.offsetWidth;
-
-function handleClick(direction) {
-    // Based on the direction we call `scrollBy` with the item width we got earlier
-    if(direction === "previous") {
-        list.scrollBy({ left: -itemWidth, behavior: "smooth" });
-    } else {
-        list.scrollBy({ left: itemWidth, behavior: "smooth" });
-    }
+    const scrollAmount = direction === "previous" ? -itemWidth : itemWidth;
+    list.scrollBy({ left: scrollAmount, behavior: "smooth" });
 }

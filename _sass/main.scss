@@ -95,6 +95,9 @@ main {
             width: 100%;
         }
     }
+    .image-rounded-corners img {
+        border-radius: v.$border-rounding;
+    }
     
     h1,h2,h3 {
         line-height: 1.2;

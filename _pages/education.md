@@ -26,11 +26,15 @@ Audience: 30 high school students with minimal science background and diverse ca
 
 Format: 1-hour workshop + worksheet
 
+<br>
+
 **Workshop 2: Engineering SynBio Solutions**
 
 Audience: 20 high school students with minimal science background who are interested in science
 
 Format: 2-hour workshop + fully illustrated workbook + comic
+
+<br>
 
 **Workshop 3: SynBio Solutions to Real-World Problems**
 
@@ -74,6 +78,9 @@ We therefore designed our education program around a simple principle:
 # Our Teaching Philosophy
 
 Our curriculum is grounded in two interconnected principles: **Universal Design for Learning (UDL)** and **STEAM**.
+
+<br>
+<br>
 
 ## Student Centered Learning Through UDL
 
@@ -238,10 +245,10 @@ We delivered this one-hour workshop in June to 30 high school students at the Or
     <li> <img src="https://static.igem.wiki/teams/6041/wiki/pages/education/wksp-1/edu-wksp-ohs-insta-6.avif"/></li>
     
   </ul>
-  <button onclick="handleClick('previous')" class="button button--previous" type="button">
+  <button onclick="handleClick('previous', this)" class="button button--previous" type="button">
     <div class="button-arrow">🞀</div>
   </button>
-  <button onclick="handleClick('next')" class="button button--next" type="button">
+  <button onclick="handleClick('next', this)" class="button button--next" type="button">
     <div class="button-arrow">🞂</div>
   </button>
 </div>
@@ -283,6 +290,9 @@ These observations directly informed our second iteration. We redesigned the cur
     label="wksp2_main_photo"
     roundedcorners="true"
 %}
+
+<br>
+<br>
 
 ## Design
 
@@ -376,10 +386,10 @@ Students progressed from foundational biological concepts to increasingly techni
     <li> <img src="https://static.igem.wiki/teams/6041/wiki/pages/education/edu-wksp-sail-insta-9.avif"/></li>
     
   </ul>
-  <button onclick="handleClick('previous')" class="button button--previous" type="button">
+  <button onclick="handleClick('previous', this)" class="button button--previous" type="button">
     <div class="button-arrow">🞀</div>
   </button>
-  <button onclick="handleClick('next')" class="button button--next" type="button">
+  <button onclick="handleClick('next', this)" class="button button--next" type="button">
     <div class="button-arrow">🞂</div>
   </button>
 </div>
@@ -423,6 +433,9 @@ This question became the starting point for our third iteration.
     label="wksp3_main_photo"
     roundedcorners="true"
 %}
+
+<br>
+<br>
 
 ## Design
 
@@ -538,6 +551,21 @@ I think for the level you were teaching (mostly biology/chemistry students) you 
     <div class="button-arrow">🞂</div>
   </button>
 </div>
+
+<br>
+<br>
+
+{% include box.html
+  text="’I really liked the little intro! It helped refresh some of my freshman biology knowledge
+
+I also really liked that you guys made the little cards for the different kinds of ways to perform synthetic biology. I think I enjoyed that the most because it was so nice to tactically match/compare instead of just circling what was the best answer.
+
+I also loved the art and drawings!
+
+The conversations that we had about the ethics were interesting too!
+
+I think for the level you were teaching (mostly biology/chemistry students) you went at a good pace.’ -Undergraduate STEM Student from Workshop 3"
+%}
 
 <br>
 <br>
