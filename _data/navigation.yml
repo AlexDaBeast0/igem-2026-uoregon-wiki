@@ -53,9 +53,6 @@ pages:
           - title: Education
             url: /education
             hint: Pedagogical approaches
-          - title: Events
-            url: /edu-events
-            hint: Camp and other outreach
           - title: How to wiki
             url: /how-to-wiki
             hint: Jekyll template
