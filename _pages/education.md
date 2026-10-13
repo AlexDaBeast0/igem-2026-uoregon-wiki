@@ -88,7 +88,7 @@ Our workshops emphasize **student voice** and **active participation**.
 
 Direct interaction with students allows us as educators to respond to questions, clarify misconceptions, and adapt explanations based on students’ prior knowledge. Rather than treating education as a one-way transfer of information, we create opportunities for students to participate in discussions, work through problems in a collaborative manner, and brainstorm their own ideas.
 
-This approach is grounded in **Universal Design for Learning (UDL)**, a framework centered on providing multiple means of **engagement, representation, and action and expression**. [INSERT CAST UDL GUIDELINES CITATION]
+This approach is grounded in **Universal Design for Learning (UDL)**, a framework centered on providing multiple means of **engagement, representation, and action and expression** {% cite incUDLGuidelines --file education %}.
 
 We incorporated these principles throughout our curricula by offering written explanations, visual representations, hands-on activities, guided discussion, and opportunities for students to communicate their own ideas.
 
@@ -156,7 +156,7 @@ In synthetic biology, DBTL allows researchers to systematically design, build, t
 
 This framework enabled us to improve our curriculum based on both direct student feedback as post-workshop forms as well as indirect student feedback as observed engagement, understanding, and creativity.
 
-Our events were also structured around a workshop model consisting of three main components; a mini lesson that introduces a concept through direct instruction, discussion, or an open-ended activity; a workshop time that gives students an opportunity to practice or apply the concept independently or in small groups; and a debrief time for reflecting on what students observed and learned. [CITE WORKSHOP MODEL]
+Our events were also structured around a workshop model consisting of three main components; a mini lesson that introduces a concept through direct instruction, discussion, or an open-ended activity; a workshop time that gives students an opportunity to practice or apply the concept independently or in small groups; and a debrief time for reflecting on what students observed and learned {% cite zhangEnrichingSTEAMEducation2024 --file education %}.
 
 This structure allowed us to combine direct instruction with active learning while providing students with opportunities to practice new concepts before applying them to increasingly complex scenarios.
 
@@ -611,3 +611,7 @@ We hope to build learning communities where students feel empowered to ask quest
 Ultimately, our vision is not simply to teach students about synthetic biology.
 
 It’s to give more students the opportunity to see themselves as people who can use it to create a positive impact by engineering synthetic biology solutions to real-world problems.
+
+# References
+
+{% bibliography --file education --cited_in_order %}
