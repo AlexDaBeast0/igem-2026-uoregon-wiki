@@ -258,16 +258,17 @@ We delivered this one-hour workshop in June to 30 high school students at the Or
     <li> <img src="https://static.igem.wiki/teams/6041/wiki/pages/education/wksp-1/edu-wksp-ohs-insta-6.avif"/></li>
     
   </ul>
-  <button onclick="handleClick('previous')" class="button button--previous" type="button">
+  <button onclick="handleClick('previous', this)" class="button button--previous" type="button">
     <div class="button-arrow">🞀</div>
   </button>
-  <button onclick="handleClick('next')" class="button button--next" type="button">
+  <button onclick="handleClick('next', this)" class="button button--next" type="button">
     <div class="button-arrow">🞂</div>
   </button>
 </div>
 
 <br>
 <br>
+
 
 ## Learn
 
