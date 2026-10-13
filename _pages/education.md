@@ -109,7 +109,7 @@ We therefore incorporated visual communication throughout our curricula. We used
 
 By combining technical explanations with creative and visual activities, we made complex concepts more approachable while maintaining scientific rigor.
 
-STEAM is the means through which we aim to create student-centered learning experiences [INSERT STEAM CITATION]. These experiences are mapped out into concrete points of evaluation in order to engage students through each step of the learning process.
+STEAM is the means through which we aim to create student-centered learning experiences {% cite zhangEnrichingSTEAMEducation2024 --file education %}. These experiences are mapped out into concrete points of evaluation in order to engage students through each step of the learning process.
 
 {% include figure.html
     url="https://static.igem.wiki/teams/6041/wiki/pages/education/reflective-theory.avif"
@@ -327,8 +327,6 @@ We illustrated a workbook, comic, presentation, and hands-on activities.
 
 The curriculum’s learning objectives are modeled after the measurable verbs of **Bloom’s Taxonomy** (Remember, Understand, Apply, Analyze, Evaluate, Create).
 
-[INSERT FIGURE OF BLOOM’S TAXONOMY AND WORDS RELATED TO EACH LEVEL]
-
 **Understand why synthetic biology matters:** We introduced synthetic biology through real-world problems and examples relevant to our student audience.
 
 **Explain the Central Dogma of molecular biology:** We illustrated a comic to introduce the central dogma and establish foundational knowledge before introducing synthetic biology tools.
@@ -503,8 +501,9 @@ This workshop combines a new illustrated workbook with hands-on activities desig
 url="https://static.igem.wiki/teams/6041/wiki/pages/education/wksp3-cards.avif"
 caption="Workshop 3: Illustrated Synthetic Biology Tools Cards"
 alttext="Workshop 3: Illustrated Synthetic Biology Tools Cards"
-label="wksp3_cards" %}
+label="wksp3_cards"
 roundedcorners="true"
+%}
 </div>
 
 <br>
