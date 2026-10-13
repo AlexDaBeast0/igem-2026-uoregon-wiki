@@ -1,4 +1,4 @@
-<figure id="{{ include.label }}" class="image">
+<figure id="{{ include.label }}" class="image {% if include.roundedcorners %}image-rounded-corners{% endif %}">
   <img alt="{{ include.alttext }}" src="{{ include.url }}"/>
   <figcaption>{{ include.caption | markdownify }}</figcaption>
 </figure>

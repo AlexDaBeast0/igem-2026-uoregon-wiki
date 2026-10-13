@@ -122,6 +122,7 @@ STEAM is the means through which we aim to create student-centered learning expe
     caption="Education Figure 1: Diagram of Reflective Theory of Change, adapted from Oregon State University STEM Research Center Presentation at Polar STEAM Summit 2026."
     alttext="Diagram of Reflective Theory of Change, adapted from Oregon State University STEM Research Center Presentation at Polar STEAM Summit 2026."
     label="edu_reflection"
+    roundedcorners="True"
 %}
 
 STEAM is the lens with which designed our activities, how our chosen synthetic biology concepts were communicated to students, and how engagement with the learning process was determined. These intermediates would ultimately result in our overarching desired outcome of an accessible and engaging learning experience that has been tailored to our student audiences.
