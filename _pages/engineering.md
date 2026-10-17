@@ -65,7 +65,7 @@ label="Samples 10, 11, 12, and 13"
 
 ### Learn 1.1
 
-It was verified that the TmCphA1-pET21(+) plasmid matched the original design [*TmCphA1 stock protocol]*(/uoregon/protocols#protocol-tmcpha-stock-protocol). 
+It was verified that the TmCphA1-pET21(+) plasmid matched the original design [TmCphA1 stock protocol](/uoregon/protocols#protocol-tmcpha-stock-protocol). 
 
 Results of protein expression and purification show that the target bands of 100kDa are present for most lysed cell samples. Samples 4 and 8 (see *CphA 5mL expression conditions - cycle 1.1*) show target bands. It appears that—from our range of variability—growing cells at 30 C for 4 hr, with the addition of either 1mM or 0.1 mM IPTG prove to be optimal for CphA expression. Using these exact conditions, a larger liquid culture can be made with the goal of purifying a larger quantity of TmCphA1. Now, we can more easily ensure a TmCphA1 supply without wasting lab supplies.
 

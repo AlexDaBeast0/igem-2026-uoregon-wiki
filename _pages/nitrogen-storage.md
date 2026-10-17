@@ -5,7 +5,7 @@ permalink: /nitrogen-storage
 title: Nitrogen Storage
 subtitle: Storing the nitrogen that the bacteria capture.
 banner: https://static.igem.wiki/teams/6041/wiki/page-banners/banner-electroporation.avif
---
+---
 
 # Cyanophycin
 

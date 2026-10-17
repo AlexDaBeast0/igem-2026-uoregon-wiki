@@ -4,7 +4,7 @@ permalink: protocols
 
 title: Protocols
 subtitle: Key protocols and methods used in wet lab.
-banner: https://static.igem.wiki/teams/6041/wiki/placeholders/petunias.avif
+banner: https://static.igem.wiki/teams/6041/wiki/page-banners/banner-david-in-lab1.avif
 
 toc_h_max: 1
 ---
