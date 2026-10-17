@@ -19,6 +19,8 @@
     font-style: normal;
     font-display: swap;
 }
+//@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 
 #hero {
     position: relative;
@@ -127,6 +129,8 @@
     }
 
     #comic-header {
+        //font-family: "EB Garamond";
+
         max-width: 60rem;
         margin: 0 auto;
         text-align: center;
@@ -169,78 +173,202 @@
     flex-flow: column nowrap;
     align-items: center;
 
-    gap: 32px;
+    //gap: 32px;
+    
+    //background-color: white;
 
     .story-spacer {
-        font-size: 32px;        
+        font-family: "DarumadropOne";
+        font-size: 17pt;
+        text-align: center;
+        color: #323033;
+    }
+
+    .story-imgblock {
+        position: relative;
+        width: 100%;
+        container-type: inline-size;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .story-imgblock-text {
+            position: absolute;
+            z-index: 1;
+
+            font-size: 17pt;//3cqw;
+            font-family: "DarumadropOne";
+            color: #323033;
+            text-align: center;
+        }
+    }
+
+    #comic-zadie1-0-castle {
+        padding: 10px 0;
+        background-color: #646f71;
+        color: #fff8e8;
     }
     
-    .story-imgblock {
-        img {
-            width: 100%;
-        }
-    }
-}
-
-.dialog-container {
-    max-width: 70rem;
-    margin: 32px auto;
-    position: relative;
-
-    #problem-wrapper {
-        max-width: 48rem;
-        #problem-bubble-wrapper {
-            position: relative;
-            margin-bottom: -150px;
-            
-            #problem-bubble {
-                display: block;
-                -webkit-transform: scaleX(-1);
-                transform: scaleX(-1);
-                //z-index: -1;
-            }
-
-            #problem-bubble-text {
-                position: absolute;
-                top: 5%;
-                left: 5%;
-                
-                text-align: left;
-                z-index: 1;
-            }
-        }
-        #problem-footer {
-            position: relative;
-        }
+    #comic-zadie2-letter {
+        top: 20%;
+        left: 35%;
+        width: 50%;
     }
 
-    #solution-wrapper {
-        max-width: 48rem;
-        margin-left: auto;
-        margin-right: 0;
+    #comic-zadie3-0-alchemist {
+        background-color: #dedfd1;
+    }
+    
+    #comic-hain1-0-farmer-fertilizing {
+        margin-top: 20px;
+        padding: 15px 15px;
+        border-radius: 20px;
+        background-color: #cfd7cc;
+    }
+    
+    #comic-hain2-0-wastestreams {
+        padding: 15px 15px;
+        border-radius: 20px;
+        background-color: #cfd7cc;
+    }
+
+    #comic-hain3-eutrophication {
+        top: 65%;
+        left: 40%;
+        width: 50%;
+
+        padding: 10px 10px;
+        border-radius: 20px;
+        background-color: #cfd7cc;
+    }
+    
+    #comic-hain4-bluebaby {
+        top: 70%;
+        left: 15%;
+        width: 40%;
+
+        padding: 10px 0;
+        border-radius: 20px;
+        background-color: #cfd7cc;
+    }
+    
+    #comic-hain5-sicentist-wonders {
+        top: 5%;
+        left: 23%;
+        width: 60%;
+        text-align: center;
+    }
+
+    #comic-hain6-0-uptake {
+        //margin: 0 10%;
+        padding: 10px 0;
+        border-radius: 20px;
+        border: 3px solid #363a3d;
+        background-color: #cfd7cc;
+    }
+    
+    #comic-hain6-2-uptake {
+        top: 50%;
+        left: 55%;
+        width: 40%;
+
+        padding: 10px 0;
+        border-radius: 20px;
+        background-color: #cfd7cc;
+    }
+
+    #comic-hain7-storage {
+        top: 40%;
+        left: 10%;
+        width: 40%;
+
+        padding: 10px 10px;
+        border-radius: 20px;
+        background-color: #cfd7cc;
+    }
+
+    #comic-hain8-flocculation {
+        top: 25%;
+        left: 65%;
+        width: 30%;
+
+        padding: 10px 10px;
+        border-radius: 20px;
+        background-color: #cfd7cc;
+    }
+
+    #comic-hain9-0-implementation {
+        margin: 10%;
+        pading: 0 10px;
         
-        #solution-bubble-wrapper {
-            position: relative;
-            margin-bottom: -170px;
-            
-            #solution-bubble {
-                display: block;
-            }
-
-            #solution-bubble-text {
-                position: absolute;
-                top: 5%;
-                right: 5%;
-                
-                text-align: right;
-                z-index: 1;
-            }
-        }
-        #solution-footer {
-            position: relative;
-        }
+        border-radius: 20px;
+        //border: 3px solid #363a3d;
+        background-color: #cfd7cc;
     }
 }
+
+/* .dialog-container {
+   max-width: 70rem;
+   margin: 32px auto;
+   position: relative;
+
+   #problem-wrapper {
+   max-width: 48rem;
+   #problem-bubble-wrapper {
+   position: relative;
+   margin-bottom: -150px;
+   
+   #problem-bubble {
+   display: block;
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+   //z-index: -1;
+   }
+
+   #problem-bubble-text {
+   position: absolute;
+   top: 5%;
+   left: 5%;
+   
+   text-align: left;
+   z-index: 1;
+   }
+   }
+   #problem-footer {
+   position: relative;
+   }
+   }
+
+   #solution-wrapper {
+   max-width: 48rem;
+   margin-left: auto;
+   margin-right: 0;
+   
+   #solution-bubble-wrapper {
+   position: relative;
+   margin-bottom: -170px;
+   
+   #solution-bubble {
+   display: block;
+   }
+
+   #solution-bubble-text {
+   position: absolute;
+   top: 5%;
+   right: 5%;
+   
+   text-align: right;
+   z-index: 1;
+   }
+   }
+   #solution-footer {
+   position: relative;
+   }
+   }
+   } */
 
 .artfont-lg {
     font-family: "DarumadropOne", sans-serif;
