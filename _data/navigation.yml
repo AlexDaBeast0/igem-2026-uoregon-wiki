@@ -1,32 +1,36 @@
 pages:
   - title: Project
     children:
-      - title: Description
-        url: /description
-        hint: Overview of our project
-      - title: Engineering
-        url: /engineering
-        hint: DBTL Cycles
-      - title: Contribution
-        url: /contribution
-        hint: To the iGEM community
-
-  - title: Research
-    children:
-      - title: Wet lab
+      - title: Overview
+        children:
+          - title: Description
+            url: /description
+            hint: Overview of our project
+          - title: Contribution
+            url: /contribution
+            hint: To the iGEM community
+      - title: Project modules
         children:
           - title: Chassis
             url: /chassis
-            hint: Chassis module
+            hint: Bacteria housing our system
           - title: Nitrogen storage
             url: /nitrogen-storage
             hint: Nitrogen storage module
           - title: Flocculation
             url: /flocculation
-            hint: Flocculation module
+            hint: Collecting the bacteria
+
+  - title: Research
+    children:
+      - title: Wet lab
+        children:
+          - title: Engineering
+            url: /engineering
+            hint: DBTL cycles
           - title: Protocols
             url: /protocols
-            hint: Protocols used in the lab
+            hint: Protocols used in lab
 
       - title: Dry lab
         children:
