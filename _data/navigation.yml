@@ -40,6 +40,9 @@ pages:
           - title: Wiki Search
             url: /software
             hint: Smart search engine for past iGEM projects
+          - title: Wiki Search Actually
+            url: /wiki-search
+            hint: wiki search with pagefind
 
       - title: Implementation
         children:

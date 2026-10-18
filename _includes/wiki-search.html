@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iGEM Wiki Search</title>
+</head>
+<body>
+<main>
+<style>body{margin:0;background:#f6f1ec;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:52rem;margin:0 auto;padding:1rem 1rem 2rem}h1{font-size:1.6rem;margin:1.5rem 0 0}</style>
+<h1>iGEM Wiki Search</h1>
+<!-- data-pagefind below is the folder holding pagefind.js, relative to this page. -->
+<div id="igem-search" class="igs" data-pagefind="pagefind/">
+<style>
+  .igs {
+    --igs-surface: #e2d7cc;
+    --igs-ink:     #10131F;
+    --igs-muted:   #5C6478;
+    --igs-accent:  #727e84;
+    --igs-accent-dark: #47216F;
+    --igs-link:    #1B4DB1;
+    --igs-rule:    #C4CAD8;
+    --igs-mark:    #DCEF9B;
+    --igs-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    color: var(--igs-ink);
+    line-height: 1.55;
+    margin: 1.5rem 0 3rem;
+  }
+  .igs *, .igs *::before, .igs *::after { box-sizing: border-box; } 
+  .igs-form { display: flex; gap: .5rem; margin: 0 0 1rem; }
+  .igs-form input[type=search] {
+    flex: 1; min-width: 0;
+    font: inherit; font-size: 1.05rem; font-weight: 500;
+    padding: .8rem 1rem;
+    background: var(--igs-surface);
+    border: 1.5px solid var(--igs-ink); border-radius: 2px;
+    color: inherit;
+  }
+  .igs-form input[type=search]::placeholder { color: #6E768A; } 
+  .igs-form button {
+    font: inherit; font-weight: 600; font-size: .95rem;
+    letter-spacing: .04em; text-transform: uppercase;
+    padding: 0 1.4rem;
+    background: var(--igs-accent); color: #fff;
+    border: 1.5px solid var(--igs-accent); border-radius: 2px;
+    cursor: pointer;
+  }
+  .igs-form button:hover { background: var(--igs-accent-dark); border-color: var(--igs-accent-dark); }
+  .igs :focus-visible { outline: 3px solid var(--igs-link); outline-offset: 2px; }
+  .igs-filters { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
+  .igs-filters .igs-label, .igs-status, .igs-rec, .igs-foot {
+    font-family: var(--igs-mono); color: var(--igs-muted); letter-spacing: .06em;
+  }
+  .igs-filters .igs-label { font-size: .7rem; text-transform: uppercase; margin-right: .3rem; }
+  .igs-chip {
+    font: 500 .8rem/1 var(--igs-mono);
+    padding: .4rem .6rem;
+    background: transparent;
+    border: 1px solid var(--igs-rule); border-radius: 2px;
+    color: var(--igs-muted); cursor: pointer;
+  }
+  .igs-chip[aria-pressed="true"] { background: var(--igs-ink); border-color: var(--igs-ink); color: #fff; }
+  .igs-status {
+    font-size: .75rem; text-transform: uppercase;
+    padding: 1.5rem 0 .75rem;
+    border-bottom: 1px solid var(--igs-rule);
+  }
+  .igs-card {
+    background: var(--igs-surface);
+    border: 1px solid var(--igs-rule);
+    border-left: 3px solid var(--igs-accent);
+    border-radius: 2px;
+    padding: 1.1rem 1.25rem;
+    margin-top: .9rem;
+  }
+  .igs-rec { font-size: .72rem; display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .35rem; }
+  .igs-card .igs-name { font-size: 1.4rem; font-weight: 700; line-height: 1.2; margin: 0 0 .4rem; }
+  .igs-card .igs-name a { color: var(--igs-ink); text-decoration: none; }
+  .igs-card .igs-name a:hover { color: var(--igs-accent-dark); text-decoration: underline; }
+  .igs-summary { margin: 0 0 .8rem; color: #2C3244; }
+  .igs-track { display: flex; gap: 2px; margin-bottom: .9rem; }
+  .igs-track i { height: 6px; flex: 1 1 0; background: var(--igs-rule); border-radius: 1px; }
+  .igs-track i.hit { background: var(--igs-accent); }
+  .igs details { border-top: 1px dashed var(--igs-rule); padding-top: .6rem; }
+  .igs summary {
+    font: .75rem var(--igs-mono); letter-spacing: .04em;
+    color: var(--igs-link); cursor: pointer; list-style: none;
+  }
+  .igs summary::-webkit-details-marker { display: none; }
+  .igs summary::before { content: "▸ "; }
+  .igs details[open] summary::before { content: "▾ "; }
+  .igs-hit { padding: .65rem 0 .2rem .9rem; border-left: 1px solid var(--igs-rule); margin-top: .55rem; }
+  .igs-hit a { font: .8rem var(--igs-mono); color: var(--igs-link); text-decoration: none; }
+  .igs-hit a:hover { text-decoration: underline; }
+  .igs-hit p { margin: .2rem 0 0; font-size: .9rem; color: #394054; }
+  .igs mark { background: var(--igs-mark); color: inherit; padding: 0 .1em; }
+  .igs-empty { padding: 2rem 0; color: var(--igs-muted); }
+  .igs-empty code, .igs-ex {
+    font: .85rem var(--igs-mono);
+    background: var(--igs-surface); border: 1px solid var(--igs-rule);
+    padding: .15rem .4rem; border-radius: 2px; color: var(--igs-ink);
+  }
+  .igs-ex { cursor: pointer; margin: 0 .2rem .3rem 0; display: inline-block; }
+  .igs-more {
+    display: block; margin: 1.2rem auto 0;
+    font: 600 .8rem var(--igs-mono); letter-spacing: .06em; text-transform: uppercase;
+    padding: .6rem 1.2rem; background: transparent; color: var(--igs-ink);
+    border: 1.5px solid var(--igs-ink); border-radius: 2px; cursor: pointer;
+  }
+  .igs-foot { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--igs-rule); font-size: .72rem; }
+  @media (max-width: 480px) {
+    .igs-form { flex-direction: column; }
+    .igs-form button { padding: .8rem; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .igs-card { animation: igs-rise .18s ease-out both; }
+    @keyframes igs-rise { from { opacity: 0; transform: translateY(3px); } }
+  }
+</style>
+<form class="igs-form" role="search">
+  <input type="search" name="q" autocomplete="off" placeholder="Search past iGEM wikis, e.g. heavy metal biosensor" aria-label="Search iGEM wikis">
+  <button type="submit">Search</button>
+</form>
+<div class="igs-filters"><span class="igs-label">Years</span></div>
+<div class="igs-out" aria-live="polite">
+  <div class="igs-empty">
+    <p>Try
+      <button type="button" class="igs-ex">heavy metal biosensor</button>
+      <button type="button" class="igs-ex">microplastic degradation</button>
+      <button type="button" class="igs-ex">nitrate</button>
+      <button type="button" class="igs-ex">CRISPRi</button>
+    </p>
+  </div>
+</div>
+<div class="igs-foot">Not affiliated with iGEM. The content belongs to the teams that wrote it.</div>
+<script>
+(function () {
+  var root = document.getElementById('igem-search');
+  if (!root) return;
+  // Resolve against the page URL: import() treats bare paths like 'pagefind/x.js' as package names.
+  var BASE = new URL(root.getAttribute('data-pagefind'), location.href).href;
+  var BATCH = 60;          // results whose text is loaded per "batch"
+  var form = root.querySelector('.igs-form');
+  var qEl = form.querySelector('input');
+  var out = root.querySelector('.igs-out');
+  var filtersEl = root.querySelector('.igs-filters');
+  var activeYears = new Set();
+  var pf = null, pfReady = null;
+  var current = null;      // state of the latest search
+  var token = 0;           
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function safeUrl(u) { return /^https:\/\/[^\s"]+$/.test(u || '') ? u : '#'; }
+  function loadPagefind() {
+    if (!pfReady) {
+      pfReady = import(BASE + 'pagefind.js').then(function (mod) {
+        pf = mod;
+        return pf.options({ excerptLength: 28 }).then(function () { return pf.init(); });
+      });
+    }
+    return pfReady;
+  }
+  // Return a string of <i> elements representing the number of pages and matches.
+  function track(pageCount, matches) {
+    var n = Math.min(pageCount || 1, 24), hits = Math.min(matches, n), s = '';
+    for (var i = 0; i < n; i++) s += '<i class="' + (i < hits ? 'hit' : '') + '"></i>';
+    return '<div class="igs-track" aria-hidden="true">' + s + '</div>';
+  }
+  function groupByTeam(pages, teamCounts) {
+    var teams = new Map();
+    pages.forEach(function (p) {
+      var m = p.data.meta, key = m.teamkey;
+      if (!teams.has(key)) {
+        teams.set(key, {
+          key: key, name: m.team, year: m.year, url: m.teamurl,
+          summary: m.summary, pageCount: +m.pages || 1,
+          matches: teamCounts[key] || 0, pages: [], scores: []
+        });
+      }
+      var t = teams.get(key);
+      t.pages.push({ url: m.href, label: m.label, title: m.title, snippet: p.data.excerpt });
+      t.scores.push(p.score);
+    });
+    // Team score: sum of its best three pages, so consistent relevance beats one lucky page.
+    teams.forEach(function (t) {
+      t.score = t.scores.sort(function (a, b) { return b - a; }).slice(0, 3)
+        .reduce(function (a, b) { return a + b; }, 0);
+      t.matches = Math.max(t.matches, t.pages.length);
+    });
+    return Array.from(teams.values()).sort(function (a, b) { return b.score - a.score; });
+  }
+  function render() {
+    var s = current;
+    if (!s.results.length) {
+      out.innerHTML = '<div class="igs-empty"><p>No projects matched “' + esc(s.query) +
+        '”. Try fewer or more general words.</p></div>';
+      return;
+    }
+    var teams = groupByTeam(s.loaded, s.teamCounts);
+    var head = '<div class="igs-status">' + s.totalTeams + ' project' + (s.totalTeams === 1 ? '' : 's') +
+      ' · ' + s.results.length + ' page' + (s.results.length === 1 ? '' : 's') +
+      ' · showing ' + teams.length + '</div>';
+    var cards = teams.map(function (p) {
+      return '<article class="igs-card">' +
+        '<div class="igs-rec"><span>' + esc(p.year) + '</span><span>' + esc(p.key.split('/')[1]) + '</span>' +
+        '<span>' + p.matches + ' of ' + p.pageCount + ' pages matched</span></div>' +
+        '<p class="igs-name"><a href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener">' + esc(p.name) + '</a></p>' +
+        (p.summary ? '<p class="igs-summary">' + esc(p.summary) + '</p>' : '') +
+        track(p.pageCount, p.matches) +
+        '<details' + (teams.length <= 3 ? ' open' : '') + '>' +
+        '<summary>' + p.pages.length + ' matching page' + (p.pages.length === 1 ? '' : 's') + '</summary>' +
+        p.pages.map(function (pg) {
+          // Pagefind excerpts are already HTML-escaped, with <mark> around matches.
+          return '<div class="igs-hit"><a href="' + esc(safeUrl(pg.url)) + '" target="_blank" rel="noopener">' +
+            esc(pg.label) + '</a><p>' + pg.snippet + '</p></div>';
+        }).join('') +
+        '</details></article>';
+    }).join('');
+    var more = s.loaded.length < s.results.length
+      ? '<button type="button" class="igs-more">Load more results</button>' : '';
+    out.innerHTML = head + cards + more;
+  }
+  function loadBatch(t) {
+    var s = current;
+    var next = s.results.slice(s.loaded.length, s.loaded.length + BATCH);
+    return Promise.all(next.map(function (r) {
+      return r.data().then(function (data) { return { score: r.score, data: data }; });
+    })).then(function (pages) {
+      if (t !== token) return;
+      s.loaded = s.loaded.concat(pages);
+      render();
+    });
+  }
+  function run(q) {
+    q = (q || '').trim();
+    var url = new URL(location.href);
+    if (q) url.searchParams.set('q', q); else url.searchParams.delete('q');
+    history.replaceState(null, '', url);
+    if (!q) return;
+    var t = ++token;
+    out.innerHTML = '<div class="igs-status">Searching…</div>';
+    var opts = activeYears.size ? { filters: { year: { any: Array.from(activeYears) } } } : {};
+    loadPagefind().then(function () {
+      return pf.search(q, opts);
+    }).then(function (res) {
+      if (t !== token || !res) return;
+      var teamCounts = (res.filters && res.filters.team) || {};
+      current = {
+        query: q, results: res.results, loaded: [], teamCounts: teamCounts,
+        totalTeams: Object.keys(teamCounts).filter(function (k) { return teamCounts[k] > 0; }).length
+      };
+      return loadBatch(t);
+    }).catch(function (e) {
+      console.error(e);
+      if (t === token) out.innerHTML = '<div class="igs-empty"><p>Search is unavailable. Reload the page to try again.</p></div>';
+    });
+  }
+  form.addEventListener('submit', function (e) { e.preventDefault(); run(qEl.value); });
+  out.addEventListener('click', function (e) {
+    if (e.target.classList.contains('igs-ex')) { qEl.value = e.target.textContent; run(qEl.value); }
+    if (e.target.classList.contains('igs-more')) { e.target.disabled = true; loadBatch(token); }
+  });
+  // Start up Pagefind when the box is focused so the first search is quick.
+  qEl.addEventListener('focus', function () { loadPagefind(); }, { once: true });
+  qEl.addEventListener('input', function () { if (pf && qEl.value.length > 2) pf.preload(qEl.value); });
+  loadPagefind().then(function () { return pf.filters(); }).then(function (f) {
+    var years = Object.keys(f.year || {}).sort();
+    var teams = Object.keys(f.team || {}).length;
+    var pages = years.reduce(function (n, y) { return n + f.year[y]; }, 0);
+    root.querySelector('.igs-foot').textContent = teams + ' projects · ' + pages.toLocaleString() +
+      ' pages indexed · not affiliated with iGEM. Content belongs to the teams that wrote it.';
+    years.forEach(function (y) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'igs-chip'; b.textContent = y;
+      b.setAttribute('aria-pressed', 'false');
+      b.onclick = function () {
+        var on = b.getAttribute('aria-pressed') === 'true';
+        b.setAttribute('aria-pressed', String(!on));
+        if (on) activeYears.delete(y); else activeYears.add(y);
+        if (qEl.value.trim()) run(qEl.value);
+      };
+      filtersEl.appendChild(b);
+    });
+  }).catch(function (e) { console.error('wiki search: could not load index', e); });
+  var q0 = new URLSearchParams(location.search).get('q');
+  if (q0) { qEl.value = q0; run(q0); }
+})();
+</script>
+</div>
+</main>
+</body>
+</html>
