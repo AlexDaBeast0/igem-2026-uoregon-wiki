@@ -1,16 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>iGEM Wiki Search</title>
-</head>
-<body>
-<main>
-<style>body{margin:0;background:#f6f1ec;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:52rem;margin:0 auto;padding:1rem 1rem 2rem}h1{font-size:1.6rem;margin:1.5rem 0 0}</style>
+<div class="igs-page">
+<style>.igs-page{width:100%;max-width:52rem;margin:0 auto;padding:1rem 1rem 2rem}.igs-page h1{font-size:1.6rem;margin:1.5rem 0 0}</style>
 <h1>iGEM Wiki Search</h1>
-<!-- data-pagefind below is the folder holding pagefind.js, relative to this page. -->
-<div id="igem-search" class="igs" data-pagefind="pagefind/">
+<!-- data-pagefind below is the folder holding pagefind.js, with the site's baseurl. -->
+<div id="igem-search" class="igs" data-pagefind="{{ '/assets/wiki-search/pagefind/' | relative_url }}">
 <style>
   .igs {
     --igs-surface: #e2d7cc;
@@ -290,6 +282,4 @@
 })();
 </script>
 </div>
-</main>
-</body>
-</html>
+</div>
